@@ -16,4 +16,5 @@ html{
 body{
   @include flex(center, center, column);
   @include size(100vh, 100%);
+  overflow: hidden;
 }
