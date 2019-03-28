@@ -617,7 +617,7 @@ body {
 footer {
   position: absolute;
   bottom: 30px;
-  left: calc(50% - 90px);
+  left: calc(50% - 105px);
 }
 
 .expand, .flyer {
@@ -645,5 +645,7 @@ footer {
 }
 
 .active {
+  color: #627386;
   background: #F8F9FA;
+  pointer-events: none;
 }

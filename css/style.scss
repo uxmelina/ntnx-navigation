@@ -22,7 +22,7 @@ body{
 footer{
   position: absolute;
   bottom: 30px;
-  left: calc(50% - 90px);
+  left: calc(50% - 105px);
 }
 
 .expand, .flyer{
@@ -49,5 +49,7 @@ footer{
 }
 
 .active{
+  color: $font-color-2;
   background: $semi-white;
+  pointer-events: none;
 }
