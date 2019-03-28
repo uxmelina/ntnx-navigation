@@ -9,17 +9,17 @@ $('.hamburger').click();
 
 
 
-flyer(pc)
+expand(frame)
 //
 
 $('.expand').click(function(){
   alert('Switched to Expand/Collapse ↕️')
   $('aside').html('');
-  expand(pc)
+  expand(frame)
 })
 
 $('.flyer').click(function(){
   alert('Switched to Flyer ↔️')
   $('aside').html('')
-  flyer(pc)
+  flyer(frame)
 })

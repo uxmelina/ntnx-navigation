@@ -9,6 +9,29 @@ const pc = [
   { separator: ''}
 ]
 
+const beam =[
+  { title:'Cost Governance',
+    level2: ['Dashboard','Analyse','Save','RIa', 'Chargeback', 'Budget','History', 'Reports']
+  },
+  { title:'Security Compliance',
+    level2: ['Dashboard','Compliance Remediation','Inventory','History', 'Reports']
+  }
+]
+
+const frame = [
+  { title:'Systems',
+    level2: ['Sandbox','TestUX','Licensing Server','File Server'],
+  },
+  { single: 'Launchpads' },
+  { single: 'Capacity' },
+  { title:'Analytics',
+    level2: ['Sessions','Usage','Disk Usage','Elasticity'],
+  },
+  { single: 'Activity' },
+  { separator: ''},
+  { single: 'Settings' },
+  { single: 'Status' }
+]
 
 
 function flyer(page){
@@ -16,7 +39,7 @@ function flyer(page){
     $('aside').append(`
       ${a.title ? `
       <div class="nav-item" hcd>
-        <a>${a.title}</a>
+        <a>${a.title}</a>${arrow}
         <div class="nav-secondary-menu">
           ${a.level2.map(
           b => `<div class="nav-item" hcd> <a>${b}</a></div>`).join('')}

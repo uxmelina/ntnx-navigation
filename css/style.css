@@ -487,12 +487,19 @@ summary {
   font-weight: 600;
   padding: 0 20px;
   line-height: 30px;
+  position: relative;
 }
 
 summary:hover {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+summary kbd {
+  position: absolute;
+  top: 12px;
+  right: 20px;
 }
 
 details > summary::-webkit-details-marker {

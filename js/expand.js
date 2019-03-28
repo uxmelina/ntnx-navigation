@@ -4,7 +4,8 @@ function expand(page){
     $('aside').append(`
       ${a.title ? `
       <details>
-        <summary>${a.title}</summary>
+        <summary hcd >${a.title}
+        <kbd>${arrow}</kbd></summary>
         <div class="sum-secondary-menu">
           ${a.level2.map(
           b => `<div class="nav-item" hcd> <a>${b}</a></div>`).join('')}
