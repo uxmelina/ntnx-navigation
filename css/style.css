@@ -385,40 +385,6 @@ hr {
   transform: translateX(0);
 }
 
-footer {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-}
-
-.expand, .flyer {
-  border: 1px solid #D5DAE0;
-  border-radius: 4px;
-  padding: 11px 15px;
-  color: #22272E;
-  font: 400 14px/10px "nutanix_soft", san-serif;
-  text-decoration: none;
-  background-color: #FFFFFF;
-  margin: 0;
-  outline: none;
-}
-
-.expand:hover, .flyer:hover {
-  color: #22A5F7;
-  cursor: pointer;
-}
-
-.expand:active, .flyer:active {
-  color: #91d2fb;
-}
-
-.expand span, .flyer span {
-  height: 10px;
-  display: block;
-  font-weight: 500;
-  line-height: 9pt;
-}
-
 article {
   height: calc(100%);
   width: 100%;
@@ -646,4 +612,38 @@ body {
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 90px);
+}
+
+.expand, .flyer {
+  box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
+  padding: 20px;
+  background-color: white;
+  width: 50px;
+}
+
+.expand:hover, .flyer:hover {
+  color: #22A5F7;
+  cursor: pointer;
+}
+
+.flyer {
+  border-radius: 0 4pc 4pc 0;
+  padding: 10px 20px 10px 15px;
+  border-left: 1px solid transparent;
+}
+
+.expand {
+  border-radius: 4pc 0 0 4pc;
+  border-right: 1px solid #F2F4F6;
+  padding: 10px 15px 10px 20px;
+}
+
+.active {
+  background: #F8F9FA;
 }

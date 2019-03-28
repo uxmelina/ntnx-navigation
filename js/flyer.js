@@ -46,6 +46,8 @@ const frame = [
 
 
 function flyer(page){
+  $('.flyer').addClass('active');
+  $('.expand').removeClass('active');
   page.map(a =>{
     $('aside').append(`
       ${a.title ? `

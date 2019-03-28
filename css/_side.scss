@@ -26,15 +26,7 @@ hr{
   transform: translateX(0);
 }
 
-footer{
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-}
 
-.expand, .flyer{
-  @include secondary;
-}
 
 article{
   @include size(calc(100%), 100%);

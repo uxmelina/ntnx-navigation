@@ -1,5 +1,7 @@
 
 function expand(page){
+  $('.expand').addClass('active');
+  $('.flyer').removeClass('active');
   $('aside').append('<div class="scroll"></div>')
   page.map(a =>{
     $('.scroll').append(`

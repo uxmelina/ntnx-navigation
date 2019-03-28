@@ -18,3 +18,36 @@ body{
   @include size(100vh, 100%);
   overflow: hidden;
 }
+
+footer{
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 90px);
+}
+
+.expand, .flyer{
+  @include shadow();
+  padding: 20px;
+  background-color: white;
+  width: 50px;
+  &:hover{
+    color:$blue-1;
+    cursor: pointer;
+  }
+}
+
+.flyer{
+  border-radius: 0 4pc 4pc 0;
+  padding: 10px 20px 10px 15px;
+  border-left: 1px solid transparent;
+}
+
+.expand{
+  border-radius: 4pc 0 0 4pc;
+  border-right: 1px solid $border-color-3;
+  padding: 10px 15px 10px 20px;
+}
+
+.active{
+  background: $semi-white;
+}
