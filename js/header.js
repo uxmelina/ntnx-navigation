@@ -22,15 +22,15 @@ $('header').append(`
     <div class='hamburger'>
       <div class='patty'></div>
     </div>
-    <div hcs>
-      <h3 hcs class='page-title'>Nutanix Library </h3>
+    <div class= 'switcher' hcs>
+      <h3 hcs class='page-title'>Prism Central</h3>
       <div hc class='arrow'>${arrow}</div>
     </div>
     <div class='user-title main-back' hcd> sd</div>
   </div>
-  <div class='products' vss >
-    <a hcs class='pc'> Prism Central </a>
-    <a hcs class='beam'> Beam </a>
-    <a hcs class='frame'> Frame </a>
-  </div>
 `);
+$('header').after(`<div class='products' vss >
+  <a hcs class='pc'> Prism Central </a>
+  <a hcs class='beam'> Beam </a>
+  <a hcs class='frame'> Frame </a>
+</div>`)

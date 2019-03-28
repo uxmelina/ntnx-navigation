@@ -59,7 +59,18 @@ header {
   stroke: #FFFFFF;
 }
 
+.switcher:hover {
+  background-color: #1B2025;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.switcher .arrow {
+  margin-right: 20px;
+}
+
 .products {
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   position: absolute;
   width: 300px;
   top: 60px;
@@ -67,6 +78,8 @@ header {
   background-color: #1B2025;
   border-radius: 0 0 4px 4px;
   padding: 20px;
+  transform: translateY(-200px);
+  z-index: 1;
 }
 
 .products a {
@@ -79,6 +92,10 @@ header {
 .products a:hover {
   color: white;
   text-decoration: none;
+}
+
+.prod-expanded {
+  transform: translateY(0);
 }
 
 * {

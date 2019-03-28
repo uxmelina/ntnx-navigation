@@ -49,8 +49,21 @@ header{
   }
 }
 
+.switcher:hover{
+  background-color: $semi-black;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.switcher{
+
+    .arrow{
+      margin-right:  20px;
+    }
+}
 
 .products{
+  @include transition(transform);
   position: absolute;
   width: 300px;
   top:60px;
@@ -58,6 +71,9 @@ header{
   background-color: $semi-black;
   border-radius: 0 0 4px 4px;
   padding: 20px;
+  transform: translateY(-200px);
+  z-index: 1;
+
   a{
     color: $grey-3;
     text-decoration: none;
@@ -68,4 +84,8 @@ header{
      text-decoration: none;
    }
   }
+}
+
+.prod-expanded{
+  transform: translateY(0);
 }

@@ -1,3 +1,7 @@
+$('.switcher').click(function(){
+  $('.products').toggleClass('prod-expanded')
+})
+
 
 $('.hamburger').click(function(){
   $('article').toggleClass('expanded');
@@ -13,26 +17,32 @@ let state = 'expand';
 render(page, state);
 //
 
-$('.pc').click(function(){
+$('.pc').click(function(state){
   page = pc;
+  $('.page-title').text('Prism Central')
+  $('.products').removeClass('prod-expanded')
   render(page, state);
 })
 
-$('.frame').click(function(){
+$('.frame').click(function(state){
   page = frame;
+  $('.page-title').text('Frame')
+  $('.products').removeClass('prod-expanded')
   render(page, state);
 })
 
-$('.beam').click(function(){
+$('.beam').click(function(state){
   page = beam;
+  $('.page-title').text('Beam')
+  $('.products').removeClass('prod-expanded')
   render(page, state);
 })
 
 
 function render (page, state){
-
   $('aside').html('');
-  state == 'expand' ? expand(page) : flyer(page)
+
+  state === 'expand' ? expand(page) : flyer(page)
 
   $('.expand').click(function(){
     state = 'expand'
@@ -45,5 +55,4 @@ function render (page, state){
     $('aside').html('')
     flyer(page)
   })
-
 }
