@@ -12,8 +12,10 @@ const pc = [
     level2: ['Security Policies','Affinity Policies','Alert Policies','Protection Rules','Recovery Plan','Recovery Rules'] },
   { title:'Administration',
     level2: ['Projects','Categories','Roles','Users','Cluster Profiles'] },
+  { separator: '' },
   { single: 'Settings' },
-  { single: 'Help' }
+  { single: 'Help' },
+  { single: ' ' }
 ]
 
 const beam =[
@@ -22,7 +24,8 @@ const beam =[
   },
   { title:'Security Compliance',
     level2: ['Dashboard','Compliance Remediation','Inventory','History', 'Reports']
-  }
+  },
+  { single: ' ' }
 ]
 
 const frame = [
@@ -37,7 +40,8 @@ const frame = [
   { single: 'Activity' },
   { separator: ''},
   { single: 'Settings' },
-  { single: 'Status' }
+  { single: 'Status' },
+  { single: ' ' }
 ]
 
 

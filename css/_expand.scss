@@ -9,7 +9,7 @@
     transform: rotate(-90deg);
   }
   a{
-    color: $font-color-2;
+    color: $grey-3;
     text-decoration: none;
     font-weight: 600;
    &:hover{
@@ -27,7 +27,7 @@
 summary{
   @include size(30px, 240px);
   outline: none;
-  color: $font-color-2;
+  color: $grey-3;
   text-decoration: none;
   font-weight: 600;
   padding: 0 20px;
