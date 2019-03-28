@@ -1,0 +1,50 @@
+//main:style.scss
+
+header{
+  @include size(60px, 100%);
+  @include flex(center, space-between, row);
+  background: $background-color-1;
+  padding   : 0 20px;
+  color     : $white;
+}
+
+header{
+  top : 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+}
+
+.page-title{
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.arrow{
+  background-color: $background-color-2;
+  @include size(16px, 16px);
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+
+.user-title{
+  @include transition(color);
+  transition-duration: 200ms;
+  will-change: color;
+  color: $grey-3;
+
+  * { margin-left: 10px}
+  polyline {
+    @include transition(stroke);
+    transition-duration: 200ms;
+    will-change: color;
+    stroke: $grey-3;
+  }
+
+  &:hover{
+    polyline { stroke: $white }
+    cursor: pointer;
+    color : $white;
+  }
+}

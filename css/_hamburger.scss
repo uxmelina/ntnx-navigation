@@ -1,0 +1,41 @@
+//main:style.scss
+
+
+.hamburger{
+  @include size(14px ,14px);
+  @include flex(center, space-between, row);
+  position: relative;
+
+  &:before, &:after, .patty{
+    content: '';
+    border-radius: 1px;
+    @include size(2px, 100%);
+    background: $font-color-2;
+    position: absolute;
+    @include transition(all);
+    transition-duration: 300ms;
+  }
+
+  &:before{top:0px}
+  &:after{bottom:0px}
+  &:hover{
+    cursor: pointer;
+    &:before, &:after, .patty {background: white;}
+  }
+}
+
+
+.cross{
+  &:before{
+    transform: rotate(45deg) ;
+    transform-origin: -1.6px 0.65px;
+
+  }
+  &:after{
+    transform: rotate(-45deg);
+    transform-origin: -1.6px 0.65px;
+  }
+  .patty{
+    opacity: 0
+  }
+}

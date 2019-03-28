@@ -1,0 +1,55 @@
+//main:style.scss
+
+aside{
+  @include size(100%, 240px);
+  @include transition(all);
+  transition-duration: 300ms;
+  position: absolute;
+  display: flex;
+  top:60px;
+  left: 0;
+  min-height: calc(100vh - 60px);
+  background-color: $background-color-1;
+  transform: translateX(-240px);
+  padding: 20px 0;
+  z-index:200;
+}
+
+
+.nav-expanded{
+  transform: translateX(0);
+}
+
+
+article{
+  @include size(100%, 100%);
+  position: relative;
+  @include transition(transform);
+  transition-duration: 300ms;
+  &:after{
+    @include transition(border-top-left-radius);
+    border-top-left-radius: 0;
+    transition-duration: 300ms;
+  }
+}
+
+//expanded
+
+.expanded{
+  transform: translate(232px, 52px);
+  &:before, &:after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    z-index: 2;
+    background-color: #22272E;
+  }
+  &:after{
+    border-top-left-radius: 4px;
+    z-index: 3;
+    background-color: $background-color-3;
+  }
+}

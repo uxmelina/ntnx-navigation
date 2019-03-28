@@ -1,0 +1,19 @@
+//Comment for compiler
+@import '../../_ntnx/variables';
+@import '../../_ntnx/mixins';
+@import 'header';
+@import 'base';
+@import 'side';
+@import 'flyer';
+@import 'expand';
+@import 'hamburger';
+
+
+html{
+  @include font;
+  background-color: $background-color-3;
+}
+body{
+  @include flex(center, center, column);
+  @include size(100vh, 100%);
+}
