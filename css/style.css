@@ -332,6 +332,15 @@ aside {
   z-index: 200;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  width: 20px;
+  box-sizing: border-box;
+  background-color: #627386;
+  margin-left: 20px;
+}
+
 .nav-expanded {
   transform: translateX(0);
 }

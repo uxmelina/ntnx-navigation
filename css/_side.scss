@@ -15,6 +15,12 @@ aside{
   z-index:200;
 }
 
+hr{
+  border: none;
+  @include size(1px, 20px);
+  background-color: $font-color-2;
+  margin-left: 20px;
+}
 
 .nav-expanded{
   transform: translateX(0);
