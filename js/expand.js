@@ -1,7 +1,9 @@
 
 function expand(page){
+  $('aside').append('<div class="scroll"></div>')
   page.map(a =>{
-    $('aside').append(`
+    $('.scroll').append(`
+
       ${a.title ? `
       <details>
         <summary hcd >${a.title}

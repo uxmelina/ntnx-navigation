@@ -19,6 +19,8 @@
   }
 }
 
+.scroll{
+  overflow-y: scroll;}
 
 summary{
   @include size(30px, 240px);

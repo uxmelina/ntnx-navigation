@@ -1,12 +1,19 @@
 const pc = [
-  { single: 'Dashboard'},
+  { single: 'Dashboard' },
+  { title:'Activity',
+    level2: ['Alerts','Events','Tasks'] },
+  { title:'Tools',
+    level2: ['Analysis','Planning','Reporting'] },
+  { title:'Hardware & Resources',
+    level2: ['Clusters','Hosts','Disks','Availability Zones'] },
   { title:'Virtual Infrastructure',
-    level2:['VMs','Storage Containers','Catalog Items','Images','Categories','Recoverable Entitites'],
-  },
-  { title:'Policies',
-    level2:['Security Policites','Protection Policies','Recovery Plans ','NGT Policies'],
-  },
-  { separator: ''}
+    level2: ['VMs','Applications','Containers','Storage Containers','Catalog Items','Images','Virtual Networks','Direct Connections','VPNs','Floating IPs'] },
+  { title:'Protection & Security',
+    level2: ['Security Policies','Affinity Policies','Alert Policies','Protection Rules','Recovery Plan','Recovery Rules'] },
+  { title:'Administration',
+    level2: ['Projects','Categories','Roles','Users','Cluster Profiles'] },
+  { single: 'Settings' },
+  { single: 'Help' }
 ]
 
 const beam =[

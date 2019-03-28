@@ -481,6 +481,10 @@ article:after {
   text-decoration: none;
 }
 
+.scroll {
+  overflow-y: scroll;
+}
+
 summary {
   height: 30px;
   width: 240px;
