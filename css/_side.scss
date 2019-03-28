@@ -1,7 +1,7 @@
 //main:style.scss
 
 aside{
-  @include size(100%, 240px);
+  @include size(calc(100% - 40px), 240px);
   @include transition(all);
   transition-duration: 300ms;
   position: absolute;

@@ -20,7 +20,9 @@
 }
 
 .scroll{
-  overflow-y: scroll;}
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 summary{
   @include size(30px, 240px);
