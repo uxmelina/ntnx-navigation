@@ -28,12 +28,12 @@
 .cross{
   &:before{
     transform: rotate(45deg) ;
-    transform-origin: -1.6px 0.65px;
+    transform-origin: -1.6px 0.85px;
 
   }
   &:after{
     transform: rotate(-45deg);
-    transform-origin: -1.6px 0.65px;
+    transform-origin: -1.6px 0.85px;
   }
   .patty{
     opacity: 0

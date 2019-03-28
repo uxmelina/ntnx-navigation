@@ -11,31 +11,21 @@ const pc = [
 
 
 
-pc.map(a =>{
-  $('aside').append(`
-    ${a.title ? `
-    <div class="nav-item" hcd>
-      <a>${a.title}</a>
-      <div class="nav-secondary-menu">
-        ${a.level2.map(
-        b => `<div class="nav-item" hcd> <a>${b}</a></div>`).join('')}
-      </div>
-    </div>` :
-    a.single ?
-    `<div class="nav-item" hcd>
-      <a>${a.single}</a>
-    </div>` : `<hr></hr>`
-  }`)
-})
-
-
-
-```
-  { single: 'Dashboard' },
-  { title : 'Virtual Infrastructure',
-    level2: ['a','b','c','d'],
-  },
-  { title:'Policies',
-    level2: ['a','b','c','d'],
-  },
-```
+function flyer(page){
+  page.map(a =>{
+    $('aside').append(`
+      ${a.title ? `
+      <div class="nav-item" hcd>
+        <a>${a.title}</a>
+        <div class="nav-secondary-menu">
+          ${a.level2.map(
+          b => `<div class="nav-item" hcd> <a>${b}</a></div>`).join('')}
+        </div>
+      </div>` :
+      a.single ?
+      `<div class="nav-item" hcd>
+        <a>${a.single}</a>
+      </div>` : `<hr></hr>`
+    }`)
+  })
+}

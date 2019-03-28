@@ -345,8 +345,42 @@ hr {
   transform: translateX(0);
 }
 
+footer {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+}
+
+.expand, .flyer {
+  border: 1px solid #D5DAE0;
+  border-radius: 4px;
+  padding: 11px 15px;
+  color: #22272E;
+  font: 400 14px/10px "nutanix_soft", san-serif;
+  text-decoration: none;
+  background-color: #FFFFFF;
+  margin: 0;
+  outline: none;
+}
+
+.expand:hover, .flyer:hover {
+  color: #22A5F7;
+  cursor: pointer;
+}
+
+.expand:active, .flyer:active {
+  color: #91d2fb;
+}
+
+.expand span, .flyer span {
+  height: 10px;
+  display: block;
+  font-weight: 500;
+  line-height: 9pt;
+}
+
 article {
-  height: 100%;
+  height: calc(100%);
   width: 100%;
   box-sizing: border-box;
   position: relative;
@@ -524,12 +558,12 @@ details > summary::-webkit-details-marker {
 
 .cross:before {
   transform: rotate(45deg);
-  transform-origin: -1.6px 0.65px;
+  transform-origin: -1.6px 0.85px;
 }
 
 .cross:after {
   transform: rotate(-45deg);
-  transform-origin: -1.6px 0.65px;
+  transform-origin: -1.6px 0.85px;
 }
 
 .cross .patty {

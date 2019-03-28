@@ -6,3 +6,20 @@ $('.hamburger').click(function(){
 })
 
 $('.hamburger').click();
+
+
+
+flyer(pc)
+//
+
+$('.expand').click(function(){
+  alert('Switched to Expand/Collapse ↕️')
+  $('aside').html('');
+  expand(pc)
+})
+
+$('.flyer').click(function(){
+  alert('Switched to Flyer ↔️')
+  $('aside').html('')
+  flyer(pc)
+})
