@@ -37,6 +37,7 @@ header {
   transition-duration: 200ms;
   will-change: color;
   color: #9AA5B5;
+  font-weight: 600;
 }
 
 .user-title * {
@@ -376,7 +377,7 @@ hr {
   height: 1px;
   width: 20px;
   box-sizing: border-box;
-  background-color: #627386;
+  background-color: #37414B;
   margin-left: 20px;
 }
 

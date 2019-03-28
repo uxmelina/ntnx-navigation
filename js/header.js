@@ -26,7 +26,7 @@ $('header').append(`
       <h3 hcs class='page-title'>Prism Central</h3>
       <div hc class='arrow'>${arrow}</div>
     </div>
-    <div class='user-title main-back' hcd> sd</div>
+    <div class='user-title main-back' hcd> User ${arrow}</div>
   </div>
 `);
 $('header').after(`<div class='products' vss >

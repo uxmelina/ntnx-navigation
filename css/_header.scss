@@ -33,6 +33,7 @@ header{
   transition-duration: 200ms;
   will-change: color;
   color: $grey-3;
+  font-weight: 600;
 
   * { margin-left: 10px}
   polyline {
