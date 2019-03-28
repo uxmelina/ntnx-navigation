@@ -466,6 +466,10 @@ article:after {
   box-sizing: border-box;
 }
 
+.nav-item svg {
+  transform: rotate(-90deg);
+}
+
 .nav-item a {
   color: #627386;
   text-decoration: none;
@@ -510,6 +514,8 @@ details > summary::-webkit-details-marker {
   border-left: 1px solid #37414B;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: calc(200px);
 }
 
