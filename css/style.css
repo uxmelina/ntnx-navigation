@@ -59,6 +59,28 @@ header {
   stroke: #FFFFFF;
 }
 
+.products {
+  position: absolute;
+  width: 300px;
+  top: 60px;
+  left: calc(50% - (300px/2));
+  background-color: #1B2025;
+  border-radius: 0 0 4px 4px;
+  padding: 20px;
+}
+
+.products a {
+  color: #9AA5B5;
+  text-decoration: none;
+  font-weight: 600;
+  height: 30px;
+}
+
+.products a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 * {
   font: 400 14px/10px "nutanix_soft", san-serif;
   text-rendering: optimizeSpeed;

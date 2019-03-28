@@ -28,4 +28,9 @@ $('header').append(`
     </div>
     <div class='user-title main-back' hcd> sd</div>
   </div>
+  <div class='products' vss >
+    <a hcs class='pc'> Prism Central </a>
+    <a hcs class='beam'> Beam </a>
+    <a hcs class='frame'> Frame </a>
+  </div>
 `);

@@ -7,19 +7,43 @@ $('.hamburger').click(function(){
 
 $('.hamburger').click();
 
+let page = pc;
+let state = 'expand';
 
-
-expand(pc)
+render(page, state);
 //
 
-$('.expand').click(function(){
-  alert('Switched to Expand/Collapse ↕️')
-  $('aside').html('');
-  expand(pc)
+$('.pc').click(function(){
+  page = pc;
+  render(page, state);
 })
 
-$('.flyer').click(function(){
-  alert('Switched to Flyer ↔️')
-  $('aside').html('')
-  flyer(pc)
+$('.frame').click(function(){
+  page = frame;
+  render(page, state);
 })
+
+$('.beam').click(function(){
+  page = beam;
+  render(page, state);
+})
+
+
+function render (page, state){
+
+  $('aside').html('');
+  state == 'expand' ? expand(page) : flyer(page)
+
+  $('.expand').click(function(){
+    state = 'expand'
+    $('aside').html('');
+    expand(page)
+  })
+
+  $('.flyer').click(function(){
+    state = 'flyer'
+    $('aside').html('')
+    flyer(page)
+  })
+
+}

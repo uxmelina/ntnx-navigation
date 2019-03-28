@@ -48,3 +48,24 @@ header{
     color : $white;
   }
 }
+
+
+.products{
+  position: absolute;
+  width: 300px;
+  top:60px;
+  left: calc(50% - (300px/2));
+  background-color: $semi-black;
+  border-radius: 0 0 4px 4px;
+  padding: 20px;
+  a{
+    color: $grey-3;
+    text-decoration: none;
+    font-weight: 600;
+    height: 30px;
+   &:hover{
+     color: white;
+     text-decoration: none;
+   }
+  }
+}
