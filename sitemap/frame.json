@@ -1,0 +1,24 @@
+[
+    { title:'Systems',
+      level2: ['Sandbox','TestUX','Licensing Server','File Server'
+        ],
+    },
+    { single: 'Launchpads'
+    },
+    { single: 'Capacity'
+    },
+    { title:'Analytics',
+      level2: ['Sessions','Usage','Disk Usage','Elasticity'
+        ],
+    },
+    { single: 'Activity'
+    },
+    { separator: ''
+    },
+    { single: 'Settings'
+    },
+    { single: 'Status'
+    },
+    { single: ' '
+    }
+]

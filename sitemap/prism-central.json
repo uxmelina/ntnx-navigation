@@ -1,0 +1,183 @@
+[
+  {
+    "type": "PAGE",
+    "title": "Dashboard"
+  },
+  {
+    "type": "PARENT",
+    "title": "Activity",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Alerts"
+      },
+      {
+        "type": "PAGE",
+        "title": "Events"
+      },
+      {
+        "type": "PAGE",
+        "title": "Tasks"
+      }
+    ]
+  },
+  {
+    "type": "PARENT",
+    "title": "Tools",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Analysis"
+      },
+      {
+        "type": "PAGE",
+        "title": "Planning"
+      },
+      {
+        "type": "PAGE",
+        "title": "Reporting"
+      }
+    ]
+  },
+  {
+    "type": "PARENT",
+    "title": "Hardware and Resources",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Clusters"
+      },
+      {
+        "type": "PAGE",
+        "title": "Hosts"
+      },
+      {
+        "type": "PAGE",
+        "title": "Disks"
+      },
+      {
+        "type": "PAGE",
+        "title": "Availability Zones"
+      }
+    ]
+  },
+  {
+    "type": "SEPARATOR"
+  },
+  {
+    "type": "PARENT",
+    "title": "Virtual Infrastructure",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "VMs"
+      },
+      {
+        "type": "PAGE",
+        "title": "Applications"
+      },
+      {
+        "type": "PAGE",
+        "title": "Containers"
+      },
+      {
+        "type": "PAGE",
+        "title": "Storage Containers"
+      },
+      {
+        "type": "PAGE",
+        "title": "Catalog Items"
+      },
+      {
+        "type": "PAGE",
+        "title": "Images"
+      },
+      {
+        "type": "PAGE",
+        "title": "Virtual Networks"
+      },
+      {
+        "type": "PAGE",
+        "title": "Direct Connections"
+      },
+      {
+        "type": "PAGE",
+        "title": "VPNs"
+      },
+      {
+        "type": "PAGE",
+        "title": "Floating IPs"
+      }
+    ]
+  },
+  {
+    "type": "PARENT",
+    "title": "Protection & Security",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Security Policies"
+      },
+      {
+        "type": "PAGE",
+        "title": "Affinity Policies"
+      },
+      {
+        "type": "PAGE",
+        "title": "Alert Policies"
+      },
+      {
+        "type": "PAGE",
+        "title": "Protection Rules"
+      },
+      {
+        "type": "PAGE",
+        "title": "Recovery Plan"
+      },
+      {
+        "type": "PAGE",
+        "title": "Recovery Rules"
+      }
+    ]
+  },
+  {
+    "type": "SEPARATOR"
+  },
+  {
+    "type": "PARENT",
+    "title": "Administration",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Projects"
+      },
+      {
+        "type": "PAGE",
+        "title": "Categories"
+      },
+      {
+        "type": "PAGE",
+        "title": "Roles"
+      },
+      {
+        "type": "PAGE",
+        "title": "Users"
+      },
+      {
+        "type": "PAGE",
+        "title": "Cluster Profiles"
+      }
+    ]
+  },
+  {
+    "type": "SEPARATOR"
+  },
+  {
+    "type": "PAGE",
+    "title": "Settings"
+  },
+  {
+    "type": "PAGE",
+    "title": "Help"
+  }
+]

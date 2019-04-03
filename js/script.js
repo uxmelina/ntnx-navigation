@@ -1,58 +1,107 @@
-$('.switcher').click(function(){
-  $('.products').toggleClass('prod-expanded')
-})
+const E_STATE = {
+  EXPAND: 1,
+  FLYOUT: 2
+}
 
+const E_PRODUCT = {
+  PRISM_CENTRAL: "Prism Central",
+  XI_LEAP: "Xi Leap",
+  FRAME: "Frame",
+  BEAM: "Beam"
+}
 
-$('.hamburger').click(function(){
-  $('article').toggleClass('expanded');
-  $('aside').toggleClass('nav-expanded');
-  $(this).toggleClass('cross');
-})
+let state = E_STATE.EXPAND;
+let product = E_PRODUCT.PRISM_CENTRAL;
 
-$('.hamburger').click();
+$(function () {
+  setProduct(product);
 
-let page = pc;
-let state = 'expand';
-
-render(page, state);
-//
-
-$('.pc').click(function(state){
-  page = pc;
-  $('.page-title').text('Prism Central')
-  $('.products').removeClass('prod-expanded')
-  render(page, state);
-})
-
-$('.frame').click(function(state){
-  page = frame;
-  $('.page-title').text('Frame')
-  $('.products').removeClass('prod-expanded')
-  render(page, state);
-})
-
-$('.beam').click(function(state){
-  page = beam;
-  $('.page-title').text('Beam')
-  $('.products').removeClass('prod-expanded')
-  render(page, state);
-})
-
-
-function render (page, state){
-  $('aside').html('');
-
-  state === 'expand' ? expand(page) : flyer(page)
-
-  $('.expand').click(function(){
-    state = 'expand'
-    $('aside').html('');
-    expand(page)
+  $('.switcher').click(function () {
+    $('.products').toggleClass('prod-expanded')
   })
 
-  $('.flyer').click(function(){
-    state = 'flyer'
-    $('aside').html('')
-    flyer(page)
+  $('.hamburger').click(function () {
+    $('article').toggleClass('expanded');
+    $('aside').toggleClass('nav-expanded');
+    $(this).toggleClass('cross');
   })
+
+  $('.expand').click(function () {
+    state = E_STATE.EXPAND;
+    setProduct(product);
+  });
+
+  $('.flyout').click(function () {
+    state = E_STATE.FLYOUT;
+    setProduct(product);
+  });
+
+  $.each(E_PRODUCT, function (index, name) {
+    $('#products').append('<a hcs>' + name + '</a>');
+  });
+
+  $('#products a').click(function (elem) {
+    setProduct($(elem.target).text());
+  });
+
+});
+
+function setProduct(e_product) {
+  $('#page-title').text(e_product)
+  $('#products').removeClass('prod-expanded')
+  $('#navigation').html('');
+  let filename = "./sitemap/" + e_product.toLowerCase().replace(' ', "-") + ".json";
+  $.getJSON(filename, function (data) {
+    renderNavigation(data);
+  })
+    .fail(function (jqxhr, textStatus, error) {
+      alert("Request Failed: " + filename + ", " + error);
+    });
+}
+
+function renderNavigation(tree) {
+  if (state === E_STATE.EXPAND) {
+    $('.expand').addClass('active');
+    $('.flyout').removeClass('active');
+    pane = $('#navigation').append('<div class="scroll"></div>')
+    treeExpand(pane.find(".scroll"), tree);
+  } else {
+    $('.flyout').addClass('active');
+    $('.expand').removeClass('active');
+    treeFlyout($('#navigation'), tree);
+  }
+}
+
+function treeExpand(parent, tree) {
+  tree.map(element => {
+    if (element.type === "SEPARATOR") {
+      parent.append('<hr></hr>');
+    }
+    if (element.type === "PAGE") {
+      parent.append('<div class="nav-item" hcd><a>' + element.title + '</a></div>');
+    }
+    if (element.type === "PARENT") {
+      details = $('<details><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);
+      subnav = $('<div class="sum-secondary-menu"></div>').appendTo(details);
+      treeExpand(subnav, element.nav)
+      parent.append('</details>');
+    }
+  });
+}
+
+function treeFlyout(parent, tree) {
+  tree.map(element => {
+    if (element.type === "SEPARATOR") {
+      parent.append('<hr></hr>');
+    }
+    if (element.type === "PAGE") {
+      parent.append('<div class="nav-item" hcd><a>' + element.title + '</a></div>');
+    }
+    if (element.type === "PARENT") {
+      details = $('<div class="nav-item" hcd><a>' + element.title + '</a><img src="./images/arrow.svg" />').appendTo(parent);
+      subnav = $('<div class="nav-secondary-menu"></div>').appendTo(details);
+      treeFlyout(subnav, element.nav)
+      parent.append('</details>');
+    }
+  });
 }
