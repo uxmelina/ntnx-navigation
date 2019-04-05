@@ -30,9 +30,9 @@ html{
 //alignment
 [hc] { @include flex(center, center, row)       }
 [hcs]{ @include flex(center, flex-start, row)   }
+[hcd]{ @include flex(center, space-between, row)}
 [hsc]{ @include flex(flex-start, center, row)   }
 [hsd]{ @include flex(flex-start, space-between, row)}
-[hcd]{ @include flex(center, space-between, row)}
 [vcs]{ @include flex(center, flex-start, column)}
 [vss] { @include flex(flex-start, flex-start, column)}
 [vsc] { @include flex(flex-start, center, column)}

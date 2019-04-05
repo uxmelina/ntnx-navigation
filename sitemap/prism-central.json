@@ -70,7 +70,8 @@
     "nav": [
       {
         "type": "PAGE",
-        "title": "VMs"
+        "title": "VMs",
+        "sections": ["Summary", "List#", null, "Alerts", "Events", "Metrics"]
       },
       {
         "type": "PAGE",

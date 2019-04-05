@@ -1,13 +1,14 @@
 //main:style.scss
 
-
-.hamburger{
-  @include size(14px ,14px);
+.hamburger {
+  @include size(14px, 14px);
   @include flex(center, space-between, row);
   position: relative;
 
-  &:before, &:after, .patty{
-    content: '';
+  &:before,
+  &:after,
+  .patty {
+    content: "";
     border-radius: 1px;
     @include size(2px, 100%);
     background: $font-color-2;
@@ -16,26 +17,32 @@
     transition-duration: 300ms;
   }
 
-  &:before{top:0px}
-  &:after{bottom:0px}
-  &:hover{
+  &:before {
+    top: 0px;
+  }
+  &:after {
+    bottom: 0px;
+  }
+  &:hover {
     cursor: pointer;
-    &:before, &:after, .patty {background: white;}
+    &:before,
+    &:after,
+    .patty {
+      background: white;
+    }
   }
 }
 
-
-.cross{
-  &:before{
-    transform: rotate(45deg) ;
+.cross {
+  &:before {
+    transform: rotate(45deg);
     transform-origin: -1.6px 0.85px;
-
   }
-  &:after{
+  &:after {
     transform: rotate(-45deg);
     transform-origin: -1.6px 0.85px;
   }
-  .patty{
-    opacity: 0
+  .patty {
+    opacity: 0;
   }
 }

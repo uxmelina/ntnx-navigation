@@ -22,7 +22,7 @@ $(function () {
 
   $('.hamburger').click(function () {
     $('article').toggleClass('expanded');
-    $('aside').toggleClass('nav-expanded');
+    $('nav').toggleClass('nav-expanded');
     $(this).toggleClass('cross');
   })
 
@@ -41,7 +41,7 @@ $(function () {
   });
 
   $('#products a').click(function (elem) {
-    setProduct($(elem.target).text());
+    setProduct($(this).text());
   });
 
 });
@@ -70,6 +70,22 @@ function renderNavigation(tree) {
     $('.expand').removeClass('active');
     treeFlyout($('#navigation'), tree);
   }
+
+  $('.nav-item').click(function (elem) {
+    $(".hamburger").trigger("click");
+    page_sections = $('#page-sections').html('');
+    sections = $(this).data("sections").split(',');
+    page_title = $(this).find("a").text();
+    $(".page-name").each(function () {
+      $(this).text(page_title);
+    });
+
+    sections.forEach(function (item) {
+      active = item.indexOf('#') == -1 ? '' : 'selected';
+      item = item.replace('#', '');
+      $('#page-sections').append('<li class='+ active +'>' + item + '</li>')
+    });
+  });
 }
 
 function treeExpand(parent, tree) {
@@ -78,7 +94,7 @@ function treeExpand(parent, tree) {
       parent.append('<hr></hr>');
     }
     if (element.type === "PAGE") {
-      parent.append('<div class="nav-item" hcd><a>' + element.title + '</a></div>');
+      parent.append('<div class="nav-item" data-sections="' + element.sections + '"hcd><a>' + element.title + '</a></div>');
     }
     if (element.type === "PARENT") {
       details = $('<details><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);

@@ -1,41 +1,73 @@
 //main:style.scss
 
-header{
+header {
   @include size(60px, 100%);
   @include flex(center, space-between, row);
   background: $background-color-1;
-  padding   : 0 20px;
-  color     : $white;
-}
-
-header{
-  top : 0;
+  padding: 0 20px;
+  color: $white;
+  top: 0;
   left: 0;
   z-index: 10;
   position: fixed;
 }
 
-.page-title{
+.page-title {
   margin-left: 20px;
   font-weight: 600;
 }
 
-.arrow{
+.arrow {
   background-color: $background-color-2;
   @include size(16px, 16px);
   margin-left: 10px;
   border-radius: 50%;
 }
 
-
-.user-title{
+.controls {
   @include transition(color);
   transition-duration: 200ms;
   will-change: color;
   color: $grey-3;
   font-weight: 600;
 
-  * { margin-left: 10px}
+  .icon {
+    @include size(14px, 14px);
+    margin-right: 50px;
+    position: relative;
+
+    &::after {
+      content: "7";
+      position: absolute;
+      padding: 5px 6px;
+      background-color: red;
+      left: 25px;
+      top: -2px;
+      font-size: 12px;
+      line-height: 7pt;
+      display: block;
+      font-weight: 600;
+      color: white;
+      border-radius: 4pc;
+    }
+
+    &.bell {
+      background: url("../images/bell.svg");
+      &::after {
+        background-color: $red-1;
+      }
+    }
+    &.task {
+      background: url("../images/task.svg");
+      &::after {
+        background-color: $blue-1;
+      }
+    }
+  }
+
+  * {
+    margin-left: 10px;
+  }
   polyline {
     @include transition(stroke);
     transition-duration: 200ms;
@@ -43,50 +75,52 @@ header{
     stroke: $grey-3;
   }
 
-  &:hover{
-    polyline { stroke: $white }
+  &:hover {
+    polyline {
+      stroke: $white;
+    }
     cursor: pointer;
-    color : $white;
+    color: $white;
   }
 }
 
-.switcher:hover{
-  background-color: $semi-black;
-  cursor: pointer;
-  border-radius: 4px;
+.switcher {
+  margin-left: 210px;
+  .arrow {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    background-color: $semi-black;
+    cursor: pointer;
+    border-radius: 4px;
+  }
 }
 
-.switcher{
-
-    .arrow{
-      margin-right:  20px;
-    }
-}
-
-.products{
+.products {
   @include transition(transform);
   position: absolute;
   width: 300px;
-  top:60px;
-  left: calc(50% - (300px/2));
+  top: 60px;
+  left: calc(50% - (300px / 2));
   background-color: $semi-black;
   border-radius: 0 0 4px 4px;
   padding: 20px;
   transform: translateY(-200px);
   z-index: 1;
 
-  a{
+  a {
     color: $grey-3;
     text-decoration: none;
     font-weight: 600;
     height: 30px;
-   &:hover{
-     color: white;
-     text-decoration: none;
-   }
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
   }
 }
 
-.prod-expanded{
+.prod-expanded {
   transform: translateY(0);
 }
