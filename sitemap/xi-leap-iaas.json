@@ -10,12 +10,22 @@
     {
       "type": "PAGE",
       "title": "VMs",
-      "sections": ["List#"]
+      "sections": ["Summary (v1+)", "List#", "Templates", null, "Metrics", "Alerts","Events"]
     },
     {
       "type": "PAGE",
       "title": "Images",
-      "sections": ["Private Images"]
+      "sections": ["Private Images#", "Public Catalog Images"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Volumes (v1+)",
+      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Dedicated Domains",
+      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
     },
   {
     "type": "HEADING",
@@ -24,12 +34,12 @@
     {
       "type": "PAGE",
       "title": "Virtual Private Cloud",
-      "sections": ["List#"]
+      "sections": ["Summary", "List#", null, "VPN", "Direct Connect"]
     },
     {
       "type": "PAGE",
-      "title": "Floating IP",
-      "sections": ["List#"]
+      "title": "Load Balancers (v1+)",
+      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
     },
   {
     "type": "HEADING",

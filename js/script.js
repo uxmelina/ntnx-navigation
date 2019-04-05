@@ -5,16 +5,14 @@ const E_STATE = {
 
 const E_PRODUCT = {
   PRISM_CENTRAL: "Prism Central",
-  XI_LEAP: "Xi Leap v0",
-  XI_LEAP_IAAS: "Xi Leap",
-  FRAME: "Frame",
-  BEAM: "Beam"
+  XI_LEAP: "Xi Leap",
+  XI_LEAP_IAAS: "Xi Leap IaaS",
 }
 
 let state = E_STATE.EXPAND;
-let product = E_PRODUCT.XI_LEAP_IAAS;
 
 $(function () {
+  product = E_PRODUCT.XI_LEAP;
   setProduct(product);
 
   $('.switcher').click(function () {
@@ -44,14 +42,18 @@ $(function () {
   $('#products a').click(function () {
     setProduct($(this).text());
   });
-
 });
 
 function setProduct(e_product) {
   $('#page-title').text(e_product)
   $('#products').removeClass('prod-expanded')
   $('#navigation').html('');
-  let filename = "./sitemap/" + e_product.toLowerCase().replace(' ', "-") + ".json";
+  $('#aside-content').addClass("hidden");
+  $(".page-name").each(function () {
+    $(this).text('Dashboard');
+  });
+
+  let filename = "./sitemap/" + e_product.toLowerCase().replace(/ /g, "-") + ".json";
   $.getJSON(filename, function (data) {
     renderNavigation(data);
   })
@@ -72,6 +74,11 @@ function renderNavigation(tree) {
     treeFlyout($('#navigation'), tree);
   }
 
+  registerNavHandler();
+
+}
+
+function registerNavHandler() {
   $('.nav-item').click(function (event) {
     event.stopPropagation();
     $(".hamburger").trigger("click");
