@@ -12,7 +12,7 @@ const E_PRODUCT = {
 }
 
 let state = E_STATE.EXPAND;
-let product = E_PRODUCT.PRISM_CENTRAL;
+let product = E_PRODUCT.XI_LEAP_IAAS;
 
 $(function () {
   setProduct(product);
@@ -77,7 +77,6 @@ function renderNavigation(tree) {
     $(".hamburger").trigger("click");
     page_sections = $('#page-sections').html('');
     page_title = $(this).find("a").text();
-    console.log($(this));
     $(".page-name").each(function () {
       $(this).text(page_title);
     });
@@ -105,11 +104,14 @@ function treeExpand(parent, tree) {
     if (element.type === "SEPARATOR") {
       parent.append('<hr></hr>');
     }
-    if (element.type === "PAGE") {
+    else if (element.type === "HEADING") {
+      parent.append('<div class="heading" hcd>' + element.title + '</div><hr></hr>');
+    }
+    else if (element.type === "PAGE") {
       sections = element.sections ? element.sections : null;
       parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
-    if (element.type === "PARENT") {
+    else if (element.type === "PARENT") {
       details = $('<details><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);
       subnav = $('<div class="sum-secondary-menu"></div>').appendTo(details);
       treeExpand(subnav, element.nav)
@@ -123,11 +125,14 @@ function treeFlyout(parent, tree) {
     if (element.type === "SEPARATOR") {
       parent.append('<hr></hr>');
     }
-    if (element.type === "PAGE") {
+    else if (element.type === "HEADING") {
+      parent.append('<div class="heading" hcd>' + element.title + '</div><hr></hr>');
+    }
+    else if (element.type === "PAGE") {
       sections = element.sections ? element.sections : null;
       parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
-    if (element.type === "PARENT") {
+    else if (element.type === "PARENT") {
       details = $('<div class="nav-item" hcd><a>' + element.title + '</a><img src="./images/arrow.svg" />').appendTo(parent);
       subnav = $('<div class="nav-secondary-menu"></div>').appendTo(details);
       treeFlyout(subnav, element.nav)

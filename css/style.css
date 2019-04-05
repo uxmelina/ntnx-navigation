@@ -338,6 +338,10 @@ hr {
   background: #F2F4F6;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   height: 60px;
   width: 100%;
@@ -635,7 +639,7 @@ nav {
 nav hr {
   border: none;
   height: 1px;
-  width: 20px;
+  width: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #37414B;
@@ -657,10 +661,6 @@ aside {
   background-color: white;
   float: left;
   margin-top: -10px;
-}
-
-aside .hidden {
-  display: none;
 }
 
 aside h1 {
@@ -702,6 +702,10 @@ aside ul {
   margin-top: 20px;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+}
+
+aside ul div.separator {
+  margin: 10px 20px;
 }
 
 aside li {
@@ -764,6 +768,22 @@ aside li.selected:hover {
 .scroll {
   overflow-y: scroll;
   overflow-x: hidden;
+}
+
+.heading {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 15px;
+  width: 240px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #7C8D9F;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .nav-item {
