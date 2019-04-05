@@ -9,6 +9,22 @@ article {
 
   &.expanded {
     transform: translate(240px, 0px);
+    &:before,
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 4px;
+      z-index: 2;
+      background-color: #22272e;
+    }
+    &:after {
+      border-top-left-radius: 4px;
+      z-index: 3;
+      background-color: $background-color-3;
+    }
   }
 }
 
@@ -93,6 +109,10 @@ aside {
     font-weight: 500;
     color: $font-color-2;
     padding-left: 20px;
+
+    .separator {
+      margin: 10px 20px;
+    }
 
     &:hover {
       cursor: pointer;

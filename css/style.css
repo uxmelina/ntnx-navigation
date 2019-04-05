@@ -592,6 +592,23 @@ article.expanded {
           transform: translate(240px, 0px);
 }
 
+article.expanded:before, article.expanded:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  z-index: 2;
+  background-color: #22272e;
+}
+
+article.expanded:after {
+  border-top-left-radius: 4px;
+  z-index: 3;
+  background-color: #F2F4F6;
+}
+
 nav {
   height: calc(100% - 40px);
   width: 240px;
@@ -709,6 +726,10 @@ aside li {
   font-weight: 500;
   color: #627386;
   padding-left: 20px;
+}
+
+aside li .separator {
+  margin: 10px 20px;
 }
 
 aside li:hover {

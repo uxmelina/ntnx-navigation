@@ -87,9 +87,13 @@ function renderNavigation(tree) {
     } else {
       sections = $(this).data("sections").split(',');
       sections.forEach(function (item) {
-        active = item.indexOf('#') == -1 ? '' : 'selected';
-        item = item.replace('#', '');
-        $('#page-sections').append('<li class=' + active + '>' + item + '</li>')
+        if (item.length === 0) {
+          $('#page-sections').append('<div class="separator"></div>');
+        } else {
+          active = item.indexOf('#') == -1 ? '' : 'selected';
+          item = item.replace('#', '');
+          $('#page-sections').append('<li class=' + active + '>' + item + '</li>')
+        }
       });
       $('#aside-content').removeClass("hidden");
     }
