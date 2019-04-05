@@ -33,8 +33,10 @@
     "title": "Volumes (v1+)",
     "sections": [
       "List#",
-      " ",
-      "Metrics"
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
     ]
   },
   {
@@ -42,8 +44,10 @@
     "title": "Dedicated Domains",
     "sections": [
       "List#",
-      " ",
-      "Metrics (v1+)"
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
     ]
   },
   {
@@ -56,7 +60,7 @@
     "sections": [
       "Summary",
       "List#",
-      "",
+      null,
       "VPN",
       "Direct Connect"
     ]
@@ -66,8 +70,10 @@
     "title": "Load Balancers (v1+)",
     "sections": [
       "List#",
-      " ",
-      "Metrics (v1+)"
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
     ]
   },
   {
