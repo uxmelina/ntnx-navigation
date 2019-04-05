@@ -5,7 +5,8 @@ const E_STATE = {
 
 const E_PRODUCT = {
   PRISM_CENTRAL: "Prism Central",
-  XI_LEAP: "Xi Leap",
+  XI_LEAP: "Xi Leap v0",
+  XI_LEAP_IAAS: "Xi Leap",
   FRAME: "Frame",
   BEAM: "Beam"
 }
@@ -40,7 +41,7 @@ $(function () {
     $('#products').append('<a hcs>' + name + '</a>');
   });
 
-  $('#products a').click(function (elem) {
+  $('#products a').click(function () {
     setProduct($(this).text());
   });
 
@@ -71,20 +72,27 @@ function renderNavigation(tree) {
     treeFlyout($('#navigation'), tree);
   }
 
-  $('.nav-item').click(function (elem) {
+  $('.nav-item').click(function (event) {
+    event.stopPropagation();
     $(".hamburger").trigger("click");
     page_sections = $('#page-sections').html('');
-    sections = $(this).data("sections").split(',');
     page_title = $(this).find("a").text();
+    console.log($(this));
     $(".page-name").each(function () {
       $(this).text(page_title);
     });
 
-    sections.forEach(function (item) {
-      active = item.indexOf('#') == -1 ? '' : 'selected';
-      item = item.replace('#', '');
-      $('#page-sections').append('<li class='+ active +'>' + item + '</li>')
-    });
+    if ($(this).data("sections") === null) {
+      $('#aside-content').addClass("hidden");
+    } else {
+      sections = $(this).data("sections").split(',');
+      sections.forEach(function (item) {
+        active = item.indexOf('#') == -1 ? '' : 'selected';
+        item = item.replace('#', '');
+        $('#page-sections').append('<li class=' + active + '>' + item + '</li>')
+      });
+      $('#aside-content').removeClass("hidden");
+    }
   });
 }
 
@@ -94,7 +102,8 @@ function treeExpand(parent, tree) {
       parent.append('<hr></hr>');
     }
     if (element.type === "PAGE") {
-      parent.append('<div class="nav-item" data-sections="' + element.sections + '"hcd><a>' + element.title + '</a></div>');
+      sections = element.sections ? element.sections : null;
+      parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
     if (element.type === "PARENT") {
       details = $('<details><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);
@@ -111,7 +120,8 @@ function treeFlyout(parent, tree) {
       parent.append('<hr></hr>');
     }
     if (element.type === "PAGE") {
-      parent.append('<div class="nav-item" hcd><a>' + element.title + '</a></div>');
+      sections = element.sections ? element.sections : null;
+      parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
     if (element.type === "PARENT") {
       details = $('<div class="nav-item" hcd><a>' + element.title + '</a><img src="./images/arrow.svg" />').appendTo(parent);
