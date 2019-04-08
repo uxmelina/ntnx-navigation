@@ -774,12 +774,25 @@ aside li.selected:hover {
   color: initial;
 }
 
-.scroll {
+#navigation .scroll {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-.heading {
+#navigation .exposed details summary img {
+  display: none;
+}
+
+#navigation .exposed summary {
+  color: #7C8D9F;
+}
+
+#navigation .exposed summary:hover {
+  color: #7C8D9F;
+  cursor: default;
+}
+
+#navigation .heading {
   position: relative;
   margin-top: 30px;
   padding-left: 20px;
@@ -795,7 +808,7 @@ aside li.selected:hover {
   text-transform: uppercase;
 }
 
-.nav-item {
+#navigation .nav-item {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
@@ -805,27 +818,27 @@ aside li.selected:hover {
           box-sizing: border-box;
 }
 
-.nav-item img {
+#navigation .nav-item img {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 
-.nav-item a {
+#navigation .nav-item a {
   color: #9AA5B5;
   text-decoration: none;
   font-weight: 600;
 }
 
-.nav-item a:hover {
+#navigation .nav-item:hover .nav-secondary-menu {
+  display: block;
+}
+
+#navigation .nav-item:hover a {
   color: white;
   text-decoration: none;
 }
 
-.nav-item:hover .nav-secondary-menu {
-  display: block;
-}
-
-summary {
+#navigation summary {
   height: 30px;
   width: 240px;
   -webkit-box-sizing: border-box;
@@ -839,23 +852,23 @@ summary {
   position: relative;
 }
 
-summary:hover {
+#navigation summary:hover {
   color: white;
   text-decoration: none;
   cursor: pointer;
 }
 
-summary kbd {
+#navigation summary kbd {
   position: absolute;
   top: 9px;
   right: 20px;
 }
 
-details > summary::-webkit-details-marker {
+#navigation details > summary::-webkit-details-marker {
   display: none;
 }
 
-.sum-secondary-menu {
+#navigation .sum-secondary-menu {
   border-left: 1px solid #37414B;
   margin-left: 20px;
   margin-right: 20px;
@@ -864,7 +877,7 @@ details > summary::-webkit-details-marker {
   width: calc(200px);
 }
 
-.sum-secondary-menu .nav-item:hover:before {
+#navigation .sum-secondary-menu .nav-item:hover:before {
   content: "";
   height: 100%;
   width: 1px;
@@ -876,7 +889,7 @@ details > summary::-webkit-details-marker {
   left: -1px;
 }
 
-.nav-secondary-menu {
+#navigation .nav-secondary-menu {
   display: none;
   position: absolute;
   top: -20px;
@@ -891,7 +904,7 @@ details > summary::-webkit-details-marker {
   background: #1B2025;
 }
 
-.nav-secondary-menu .nav-item {
+#navigation .nav-secondary-menu .nav-item {
   width: 220px;
 }
 
@@ -932,7 +945,9 @@ footer {
   left: calc(50% - 105px);
 }
 
-.expand, .exposed, .flyout {
+footer .expand,
+footer .exposed,
+footer .flyout {
   -webkit-box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
           box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
   padding: 20px;
@@ -940,30 +955,32 @@ footer {
   width: 50px;
 }
 
-.expand:hover, .exposed:hover, .flyout:hover {
+footer .expand:hover,
+footer .exposed:hover,
+footer .flyout:hover {
   color: #22A5F7;
   cursor: pointer;
 }
 
-.flyout {
+footer .flyout {
   border-radius: 0 4pc 4pc 0;
   padding: 10px 20px 10px 15px;
   border-left: 1px solid transparent;
 }
 
-.expand {
+footer .expand {
   border-radius: 0pc 0 0 0pc;
   border-right: 1px solid #F2F4F6;
   padding: 10px 15px 10px 20px;
 }
 
-.exposed {
+footer .exposed {
   border-radius: 4pc 0 0 4pc;
   border-right: 1px solid #F2F4F6;
   padding: 10px 15px 10px 20px;
 }
 
-.active {
+footer .active {
   color: #627386;
   background: #F8F9FA;
   pointer-events: none;

@@ -1,61 +1,62 @@
 //Comment for compiler
-@import '../../_ntnx/variables';
-@import '../../_ntnx/mixins';
-@import 'base';
-@import 'header';
-@import 'hamburger';
-@import 'page';
-@import 'navigation';
+@import "../../_ntnx/variables";
+@import "../../_ntnx/mixins";
+@import "base";
+@import "header";
+@import "hamburger";
+@import "page";
+@import "navigation";
 
-
-html{
+html {
   @include font;
   background-color: $background-color-3;
 }
-body{
+body {
   @include flex(center, center, column);
   @include size(100vh, 100%);
   overflow: hidden;
   margin: 0;
 }
 
-footer{
+footer {
   position: absolute;
   bottom: 30px;
   left: calc(50% - 105px);
-}
 
-.expand, .exposed, .flyout{
-  @include shadow();
-  padding: 20px;
-  background-color: white;
-  width: 50px;
-  &:hover{
-    color:$blue-1;
-    cursor: pointer;
+  .expand,
+  .exposed,
+  .flyout {
+    @include shadow();
+    padding: 20px;
+    background-color: white;
+    width: 50px;
+    &:hover {
+      color: $blue-1;
+      cursor: pointer;
+    }
   }
-}
 
-.flyout{
-  border-radius: 0 4pc 4pc 0;
-  padding: 10px 20px 10px 15px;
-  border-left: 1px solid transparent;
-}
+  .flyout {
+    border-radius: 0 4pc 4pc 0;
+    padding: 10px 20px 10px 15px;
+    border-left: 1px solid transparent;
+  }
 
-.expand{
-  border-radius: 0pc 0 0 0pc;
-  border-right: 1px solid $border-color-3;
-  padding: 10px 15px 10px 20px;
-}
+  .expand {
+    border-radius: 0pc 0 0 0pc;
+    border-right: 1px solid $border-color-3;
+    padding: 10px 15px 10px 20px;
+  }
 
-.exposed{
-  border-radius: 4pc 0 0 4pc;
-  border-right: 1px solid $border-color-3;
-  padding: 10px 15px 10px 20px;
-}
+  .exposed {
+    border-radius: 4pc 0 0 4pc;
+    border-right: 1px solid $border-color-3;
+    padding: 10px 15px 10px 20px;
+  }
 
-.active{
-  color: $font-color-2;
-  background: $semi-white;
-  pointer-events: none;
+  .active {
+    color: $font-color-2;
+    background: $semi-white;
+    pointer-events: none;
+  }
 }

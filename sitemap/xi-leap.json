@@ -4,6 +4,9 @@
     "title": "Dashboard"
   },
   {
+    "type": "SEPARATOR"
+  },
+  {
     "type": "PARENT",
     "title": "Virtual Infrastructure",
     "nav": [
@@ -69,6 +72,9 @@
         ]
       }
     ]
+  },
+  {
+    "type": "SEPARATOR"
   },
   {
     "type": "PARENT",

@@ -27,17 +27,17 @@ $(function () {
     $(this).toggleClass('cross');
   })
 
-  $('.expand').click(function () {
+  $('footer .expand').click(function () {
     state = E_STATE.EXPAND;
     setProduct(product);
   });
 
-  $('.flyout').click(function () {
+  $('footer .flyout').click(function () {
     state = E_STATE.FLYOUT;
     setProduct(product);
   });
 
-  $('.exposed').click(function () {
+  $('footer .exposed').click(function () {
     state = E_STATE.EXPOSED;
     setProduct(product);
   });
@@ -47,7 +47,8 @@ $(function () {
   });
 
   $('#products a').click(function () {
-    setProduct(E_PRODUCT[$(this).data("product")]);
+    product = E_PRODUCT[$(this).data("product")];
+    setProduct(product);
   });
 });
 
@@ -83,21 +84,21 @@ function setToggleFooter(tree) {
 
 function renderNavigation(tree) {
   if (state === E_STATE.EXPAND) {
-    $('.exposed').removeClass('active');
-    $('.expand').addClass('active');
-    $('.flyout').removeClass('active');
+    $('footer .exposed').removeClass('active');
+    $('footer .expand').addClass('active');
+    $('footer .flyout').removeClass('active');
     pane = $('#navigation').append('<div class="scroll"></div>')
     treeExpand(pane.find(".scroll"), tree, false);
   } else if (state === E_STATE.FLYOUT) {
-    $('.flyout').addClass('active');
-    $('.exposed').removeClass('active');
-    $('.expand').removeClass('active');
+    $('footer .flyout').addClass('active');
+    $('footer .exposed').removeClass('active');
+    $('footer .expand').removeClass('active');
     treeFlyout($('#navigation'), tree);
   } else if (state === E_STATE.EXPOSED) {
-    $('.exposed').addClass('active');
-    $('.expand').removeClass('active');
-    $('.flyout').removeClass('active');
-    pane = $('#navigation').append('<div class="scroll"></div>')
+    $('footer .exposed').addClass('active');
+    $('footer .expand').removeClass('active');
+    $('footer .flyout').removeClass('active');
+    pane = $('#navigation').append('<div class="scroll exposed"></div>')
     treeExpand(pane.find(".scroll"), tree, true);
   }
 }
