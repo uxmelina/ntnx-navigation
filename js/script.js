@@ -4,9 +4,10 @@ const E_STATE = {
 }
 
 const E_PRODUCT = {
-  PRISM_CENTRAL: "Prism Central",
-  XI_LEAP: "Xi Leap",
-  XI_LEAP_IAAS: "Xi Leap IaaS",
+  PRISM_CENTRAL: { "title": "Prism Central", "file": "prism-central" },
+  XI_LEAP: { "title": "Xi Leap", "file": "xi-leap" },
+  XI_LEAP_FLAT: { "title": "Xi Leap (Nav Style: Flat)", "file": "xi-leap-flat" },
+  XI_LEAP_IAAS: { "title": "Xi Leap IaaS (Nav Style: Flat)", "file": "xi-leap-iaas" },
 }
 
 let state = E_STATE.EXPAND;
@@ -35,17 +36,17 @@ $(function () {
     setProduct(product);
   });
 
-  $.each(E_PRODUCT, function (index, name) {
-    $('#products').append('<a hcs>' + name + '</a>');
+  $.each(E_PRODUCT, function (index, product) {
+    $('#products').append('<a data-product="' + index + '" hcs>' + product.title + '</a>');
   });
 
   $('#products a').click(function () {
-    setProduct($(this).text());
+    setProduct(E_PRODUCT[$(this).data("product")]);
   });
 });
 
 function setProduct(e_product) {
-  $('#page-title').text(e_product)
+  $('#page-title').text(e_product.title)
   $('#products').removeClass('prod-expanded')
   $('#navigation').html('');
   $('#aside-content').addClass("hidden");
@@ -53,7 +54,7 @@ function setProduct(e_product) {
     $(this).text('Dashboard');
   });
 
-  let filename = "./sitemap/" + e_product.toLowerCase().replace(/ /g, "-") + ".json";
+  let filename = "./sitemap/" + e_product.file + ".json";
   $.getJSON(filename, function (data) {
     setToggleFooter(data);
     renderNavigation(data);
@@ -98,9 +99,9 @@ function registerNavHandler() {
     });
 
     $(".hamburger").trigger("click");
-    
+
     if ($(this).data("sections") === null) {
-      $('#sidebar-content').addClass("hidden");
+      $('#sidebar').addClass("no-sections");
     } else {
       sections = $(this).data("sections").split(',');
       sections.forEach(function (item) {
@@ -112,7 +113,7 @@ function registerNavHandler() {
           $('#sidebar-sections').append('<li class=' + active + '>' + item + '</li>')
         }
       });
-      $('#sidebar-content').removeClass("hidden");
+      $('#sidebar').removeClass("no-sections");
     }
   });
 }

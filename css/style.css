@@ -663,6 +663,14 @@ aside {
   margin-top: -10px;
 }
 
+aside.no-sections {
+  background: none;
+}
+
+aside.no-sections #sidebar-content {
+  display: none;
+}
+
 aside h1 {
   margin-top: 45px;
   margin-left: 20px;

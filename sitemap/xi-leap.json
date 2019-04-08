@@ -4,64 +4,90 @@
     "title": "Dashboard"
   },
   {
-    "type": "HEADING",
-    "title": "Virtual Infrastructure"
+    "type": "PARENT",
+    "title": "Virtual Infrastructure",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "VMs",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Images",
+        "sections": [
+          "Private Images#"
+        ]
+      }
+    ]
   },
-    {
-      "type": "PAGE",
-      "title": "VMs",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Images",
-      "sections": ["Private Images#"]
-    },
   {
-    "type": "HEADING",
-    "title": "Networking"
+    "type": "PARENT",
+    "title": "Networking",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Virtual Private Clouds",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Floating IPs",
+        "sections": [
+          "List#"
+        ]
+      }
+    ]
   },
-    {
-      "type": "PAGE",
-      "title": "Virtual Private Clouds",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Floating IPs",
-      "sections": ["List#"]
-    },
   {
-    "type": "HEADING",
-    "title": "Data Recovery"
+    "type": "PARENT",
+    "title": "Data Recovery",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Protection Policies",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Recovery Plans",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Recoverable Entities",
+        "sections": [
+          "List#"
+        ]
+      }
+    ]
   },
-    {
-      "type": "PAGE",
-      "title": "Protection Policies",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Recovery Plans",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Recoverable Entities",
-      "sections": ["List#"]
-    },
   {
-    "type": "HEADING",
-    "title": "Administration"
-  },
-    {
-      "type": "PAGE",
-      "title": "Categories",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Availability Zones",
-      "sections": ["List#"]
-    }
+    "type": "PARENT",
+    "title": "Administration",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Categories",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Availability Zones",
+        "sections": [
+          "List#"
+        ]
+      }
+    ]
+  }
 ]

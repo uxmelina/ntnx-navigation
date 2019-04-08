@@ -1,0 +1,67 @@
+[
+  {
+    "type": "PAGE",
+    "title": "Dashboard"
+  },
+  {
+    "type": "HEADING",
+    "title": "Virtual Infrastructure"
+  },
+    {
+      "type": "PAGE",
+      "title": "VMs",
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Images",
+      "sections": ["Private Images#"]
+    },
+  {
+    "type": "HEADING",
+    "title": "Networking"
+  },
+    {
+      "type": "PAGE",
+      "title": "Virtual Private Clouds",
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Floating IPs",
+      "sections": ["List#"]
+    },
+  {
+    "type": "HEADING",
+    "title": "Data Recovery"
+  },
+    {
+      "type": "PAGE",
+      "title": "Protection Policies",
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Recovery Plans",
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Recoverable Entities",
+      "sections": ["List#"]
+    },
+  {
+    "type": "HEADING",
+    "title": "Administration"
+  },
+    {
+      "type": "PAGE",
+      "title": "Categories",
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Availability Zones",
+      "sections": ["List#"]
+    }
+]

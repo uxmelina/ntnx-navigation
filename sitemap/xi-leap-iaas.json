@@ -7,71 +7,124 @@
     "type": "HEADING",
     "title": "Virtual Infrastructure"
   },
-    {
-      "type": "PAGE",
-      "title": "VMs",
-      "sections": ["Summary (v1+)", "List#", "Templates", null, "Metrics", "Alerts","Events"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Images",
-      "sections": ["Private Images#", "Public Catalog Images"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Volumes (v1+)",
-      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Dedicated Domains",
-      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
-    },
+  {
+    "type": "PAGE",
+    "title": "VMs",
+    "sections": [
+      "Summary (v1+)",
+      "List#",
+      "Templates",
+      "OVAs",
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Images",
+    "sections": [
+      "Private Images#",
+      "Public Catalog Images"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Volumes (v1+)",
+    "sections": [
+      "List#",
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Dedicated Domains",
+    "sections": [
+      "List#",
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
+    ]
+  },
   {
     "type": "HEADING",
     "title": "Networking"
   },
-    {
-      "type": "PAGE",
-      "title": "Virtual Private Cloud",
-      "sections": ["Summary", "List#", null, "VPN", "Direct Connect"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Load Balancers (v1+)",
-      "sections": ["List#", "Templates", null, "Metrics", "Alerts","Events"]
-    },
+  {
+    "type": "PAGE",
+    "title": "Virtual Private Clouds",
+    "sections": [
+      "Summary",
+      "List#",
+      null,
+      "VPN",
+      "Direct Connect"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Load Balancers (v1+)",
+    "sections": [
+      "List#",
+      null,
+      "Metrics",
+      "Alerts",
+      "Events"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Floating IPs",
+    "sections": [
+      "List#"
+    ]
+  },
   {
     "type": "HEADING",
     "title": "Data Recovery"
   },
-    {
-      "type": "PAGE",
-      "title": "Protection Policies",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Recovery Plans",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Recoverable Entities",
-      "sections": ["List#"]
-    },
+  {
+    "type": "PAGE",
+    "title": "Protection Policies",
+    "sections": [
+      "List#"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Recovery Plans",
+    "sections": [
+      "List#"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Recoverable Entities",
+    "sections": [
+      "List#"
+    ]
+  },
   {
     "type": "HEADING",
     "title": "Administration"
   },
-    {
-      "type": "PAGE",
-      "title": "Categories",
-      "sections": ["List#"]
-    },
-    {
-      "type": "PAGE",
-      "title": "Availability Zones",
-      "sections": ["List#"]
-    }
+  {
+    "type": "PAGE",
+    "title": "Categories",
+    "sections": [
+      "List#"
+    ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Availability Zones",
+    "sections": [
+      "List#"
+    ]
+  }
 ]
