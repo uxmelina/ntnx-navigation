@@ -15,7 +15,7 @@
     {
       "type": "PAGE",
       "title": "Images",
-      "sections": ["Private Images"]
+      "sections": ["Private Images#"]
     },
   {
     "type": "HEADING",
@@ -23,12 +23,12 @@
   },
     {
       "type": "PAGE",
-      "title": "Virtual Private Cloud",
+      "title": "Virtual Private Clouds",
       "sections": ["List#"]
     },
     {
       "type": "PAGE",
-      "title": "Floating IP",
+      "title": "Floating IPs",
       "sections": ["List#"]
     },
   {

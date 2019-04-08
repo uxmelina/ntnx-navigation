@@ -49,13 +49,14 @@ function setProduct(e_product) {
   $('#products').removeClass('prod-expanded')
   $('#navigation').html('');
   $('#aside-content').addClass("hidden");
-  $(".page-name").each(function () {
+  $("#sidebar").find(".name").each(function () {
     $(this).text('Dashboard');
   });
 
   let filename = "./sitemap/" + e_product.toLowerCase().replace(/ /g, "-") + ".json";
   $.getJSON(filename, function (data) {
     renderNavigation(data);
+    registerNavHandler();
   })
     .fail(function (jqxhr, textStatus, error) {
       alert("Request Failed: " + filename + ", " + error);
@@ -73,35 +74,34 @@ function renderNavigation(tree) {
     $('.expand').removeClass('active');
     treeFlyout($('#navigation'), tree);
   }
-
-  registerNavHandler();
-
 }
 
 function registerNavHandler() {
   $('.nav-item').click(function (event) {
     event.stopPropagation();
-    $(".hamburger").trigger("click");
-    page_sections = $('#page-sections').html('');
+
+    $('#sidebar-sections').html('');
     page_title = $(this).find("a").text();
-    $(".page-name").each(function () {
+    $("#sidebar").find(".name").each(function () {
       $(this).text(page_title);
     });
 
+    $(".hamburger").trigger("click");
+    
     if ($(this).data("sections") === null) {
-      $('#aside-content').addClass("hidden");
+      $('#sidebar-content').addClass("hidden");
     } else {
       sections = $(this).data("sections").split(',');
       sections.forEach(function (item) {
         if (item.length === 0) {
-          $('#page-sections').append('<div class="separator"></div>');
+          $('#sidebar-sections').append('<div class="separator"></div>');
         } else {
           active = item.indexOf('#') == -1 ? '' : 'selected';
           item = item.replace('#', '');
-          $('#page-sections').append('<li class=' + active + '>' + item + '</li>')
+          $('#sidebar-sections').append('<li class=' + active + '>' + item + '</li>')
         }
       });
-      $('#aside-content').removeClass("hidden");
+      $('#sidebar-content').removeClass("hidden");
     }
   });
 }
