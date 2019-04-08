@@ -932,7 +932,7 @@ footer {
   left: calc(50% - 105px);
 }
 
-.expand, .flyout {
+.expand, .exposed, .flyout {
   -webkit-box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
           box-shadow: 0 9px 9px 0 rgba(0, 0, 0, 0.02), 0 3px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 1px 0 rgba(0, 0, 0, 0.02);
   padding: 20px;
@@ -940,7 +940,7 @@ footer {
   width: 50px;
 }
 
-.expand:hover, .flyout:hover {
+.expand:hover, .exposed:hover, .flyout:hover {
   color: #22A5F7;
   cursor: pointer;
 }
@@ -952,6 +952,12 @@ footer {
 }
 
 .expand {
+  border-radius: 0pc 0 0 0pc;
+  border-right: 1px solid #F2F4F6;
+  padding: 10px 15px 10px 20px;
+}
+
+.exposed {
   border-radius: 4pc 0 0 4pc;
   border-right: 1px solid #F2F4F6;
   padding: 10px 15px 10px 20px;

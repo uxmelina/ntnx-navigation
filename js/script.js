@@ -1,6 +1,7 @@
 const E_STATE = {
-  EXPAND: 1,
-  FLYOUT: 2
+  EXPOSED: 1,
+  EXPAND: 2,
+  FLYOUT: 3,
 }
 
 const E_PRODUCT = {
@@ -33,6 +34,11 @@ $(function () {
 
   $('.flyout').click(function () {
     state = E_STATE.FLYOUT;
+    setProduct(product);
+  });
+
+  $('.exposed').click(function () {
+    state = E_STATE.EXPOSED;
     setProduct(product);
   });
 
@@ -77,14 +83,22 @@ function setToggleFooter(tree) {
 
 function renderNavigation(tree) {
   if (state === E_STATE.EXPAND) {
+    $('.exposed').removeClass('active');
     $('.expand').addClass('active');
     $('.flyout').removeClass('active');
     pane = $('#navigation').append('<div class="scroll"></div>')
-    treeExpand(pane.find(".scroll"), tree);
-  } else {
+    treeExpand(pane.find(".scroll"), tree, false);
+  } else if (state === E_STATE.FLYOUT) {
     $('.flyout').addClass('active');
+    $('.exposed').removeClass('active');
     $('.expand').removeClass('active');
     treeFlyout($('#navigation'), tree);
+  } else if (state === E_STATE.EXPOSED) {
+    $('.exposed').addClass('active');
+    $('.expand').removeClass('active');
+    $('.flyout').removeClass('active');
+    pane = $('#navigation').append('<div class="scroll"></div>')
+    treeExpand(pane.find(".scroll"), tree, true);
   }
 }
 
@@ -118,7 +132,7 @@ function registerNavHandler() {
   });
 }
 
-function treeExpand(parent, tree) {
+function treeExpand(parent, tree, exposed) {
   tree.map(element => {
     if (element.type === "SEPARATOR") {
       parent.append('<hr></hr>');
@@ -131,7 +145,8 @@ function treeExpand(parent, tree) {
       parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
     else if (element.type === "PARENT") {
-      details = $('<details><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);
+      detail_state = exposed ? "open" : null;
+      details = $('<details ' + detail_state + '><summary hcd >' + element.title + '<kbd><img src="./images/arrow.svg" /></kbd></summary>').appendTo(parent);
       subnav = $('<div class="sum-secondary-menu"></div>').appendTo(details);
       treeExpand(subnav, element.nav)
       parent.append('</details>');
