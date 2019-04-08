@@ -55,12 +55,23 @@ function setProduct(e_product) {
 
   let filename = "./sitemap/" + e_product.toLowerCase().replace(/ /g, "-") + ".json";
   $.getJSON(filename, function (data) {
+    setToggleFooter(data);
     renderNavigation(data);
     registerNavHandler();
   })
     .fail(function (jqxhr, textStatus, error) {
       alert("Request Failed: " + filename + ", " + error);
     });
+}
+
+function setToggleFooter(tree) {
+  let display = false;
+  tree.map(element => {
+    if (element.type === "PARENT") {
+      display = true;
+    }
+  });
+  display ? $('footer').removeClass("hidden") : $('footer').addClass("hidden");
 }
 
 function renderNavigation(tree) {
