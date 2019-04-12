@@ -1,0 +1,79 @@
+[
+  {
+    "type": "PAGE",
+    "title": "Dashboard"
+  },
+  {
+    "type": "SEPARATOR"
+  },
+  {
+    "type": "PARENT",
+    "title": "Virtual Infrastructure",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "VMs",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Images",
+        "sections": [
+          "Private Images#"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "PARENT",
+    "title": "Data Recovery",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Protection Policies",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Recovery Plans",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Recoverable Entities",
+        "sections": [
+          "List#"
+        ]
+      }
+    ]
+  },
+  {
+    "type": "SEPARATOR"
+  },
+  {
+    "type": "PARENT",
+    "title": "Administration",
+    "nav": [
+      {
+        "type": "PAGE",
+        "title": "Categories",
+        "sections": [
+          "List#"
+        ]
+      },
+      {
+        "type": "PAGE",
+        "title": "Availability Zones",
+        "sections": [
+          "List#"
+        ]
+      }
+    ]
+  }
+]

@@ -29,6 +29,9 @@
     position: relative;
     padding-left: 20px;
     padding-right: 20px;
+    color: $grey-3;
+    text-decoration: none;
+    font-weight: 600;
     @include size(30px, 240px);
 
     img {
@@ -37,8 +40,6 @@
 
     a {
       color: $grey-3;
-      text-decoration: none;
-      font-weight: 600;
     }
 
     &:hover {

@@ -5,10 +5,13 @@ const E_STATE = {
 }
 
 const E_PRODUCT = {
-  PRISM_CENTRAL: { "title": "Prism Central", "file": "prism-central" },
+  LEAP: { "title": "Leap", "file": "leap" },
+  IASS: { "title": "IaaS", "file": "iaas" },
+  PRISM_CENTRAL_REORG: { "title": "Prism Central (ReOrg)", "file": "prism-central-reorg" },
   XI_LEAP: { "title": "Xi Leap", "file": "xi-leap" },
   XI_LEAP_FLAT: { "title": "Xi Leap (Nav Style: Flat)", "file": "xi-leap-flat" },
   XI_LEAP_IAAS: { "title": "Xi Leap IaaS (Nav Style: Flat)", "file": "xi-leap-iaas" },
+  PRISM_CENTRAL: { "title": "Prism Central", "file": "prism-central" },
 }
 
 let state = E_STATE.EXPAND;
@@ -168,7 +171,7 @@ function treeFlyout(parent, tree) {
       parent.append('<div class="nav-item" data-sections="' + sections + '"hcd><a>' + element.title + '</a></div>');
     }
     else if (element.type === "PARENT") {
-      details = $('<div class="nav-item" hcd><a>' + element.title + '</a><img src="./images/arrow.svg" />').appendTo(parent);
+      details = $('<div class="nav-item" hcd>' + element.title + '<img src="./images/arrow.svg" />').appendTo(parent);
       subnav = $('<div class="nav-secondary-menu"></div>').appendTo(details);
       treeFlyout(subnav, element.nav)
       parent.append('</details>');

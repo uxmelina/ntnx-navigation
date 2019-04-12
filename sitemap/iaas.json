@@ -1,0 +1,74 @@
+[
+    {
+      "type": "PAGE",
+      "title": "Dashboard"
+    },
+    {
+      "type": "SEPARATOR"
+    },
+    {
+      "type": "PARENT",
+      "title": "Virtual Infrastructure",
+      "nav": [
+        {
+          "type": "PAGE", "title": "VMs",
+          "sections": ["Summary", "List#", "VM Templates", "OVAs",null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Storage",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Networks",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Images",
+          "sections": ["Private Images", "Public Images"]
+        },
+        {
+          "type": "PAGE", "title": "Catalog Items", "sections": ["List#"]
+        }
+      ]
+    },
+    {
+      "type": "PARENT",
+      "title": "Operations",
+      "nav": [
+        {
+            "type": "PAGE", "title": "Activity", "sections": ["Alert#", "Events", "Audits", "Tasks"]
+        },
+        {
+          "type": "PAGE", "title": "Analysis", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Planning", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Reports", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Policies", "sections": ["Alert Policies#", "Audit Policies"]
+        }
+      ]
+    },
+    {
+      "type": "PARENT",
+      "title": "Management",
+      "nav": [
+        {
+          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
+        }
+      ]
+    },
+    {
+      "type": "SEPARATOR"
+    },
+    {
+      "type": "PAGE",
+      "title": "Settings"
+    }
+  ]

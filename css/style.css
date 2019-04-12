@@ -482,8 +482,8 @@ header {
   background-color: #1B2025;
   border-radius: 0 0 4px 4px;
   padding: 20px;
-  -webkit-transform: translateY(-200px);
-          transform: translateY(-200px);
+  -webkit-transform: translateY(-600px);
+          transform: translateY(-600px);
   z-index: 1;
 }
 
@@ -803,6 +803,9 @@ aside li.selected:hover {
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
+  color: #9AA5B5;
+  text-decoration: none;
+  font-weight: 600;
   height: 30px;
   width: 240px;
   -webkit-box-sizing: border-box;
@@ -816,8 +819,6 @@ aside li.selected:hover {
 
 #navigation .nav-item a {
   color: #9AA5B5;
-  text-decoration: none;
-  font-weight: 600;
 }
 
 #navigation .nav-item:hover .nav-secondary-menu {
