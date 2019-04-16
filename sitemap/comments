@@ -1,0 +1,18 @@
+{
+  "type": "PARENT",
+  "title": "Data Protection",
+  "nav": [
+    {
+      "type": "PAGE", "title": "Recovery Plan", 
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE", "title": "Recovery Rules", 
+      "sections": ["List#"]
+    },
+    {
+      "type": "PAGE", "title": "Recoverable Entities", 
+      "sections": ["List#"]
+    }
+  ]
+},

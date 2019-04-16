@@ -5,13 +5,16 @@ const E_STATE = {
 }
 
 const E_PRODUCT = {
-  LEAP: { "title": "Leap", "file": "leap" },
-  IASS: { "title": "IaaS", "file": "iaas" },
-  PRISM_CENTRAL_REORG: { "title": "Prism Central (ReOrg)", "file": "prism-central-reorg" },
   XI_LEAP: { "title": "Xi Leap", "file": "xi-leap" },
-  XI_LEAP_FLAT: { "title": "Xi Leap (Nav Style: Flat)", "file": "xi-leap-flat" },
-  XI_LEAP_IAAS: { "title": "Xi Leap IaaS (Nav Style: Flat)", "file": "xi-leap-iaas" },
-  PRISM_CENTRAL: { "title": "Prism Central", "file": "prism-central" },
+  XI_LEAP_IAAS: { "title": "Xi Leap +", "file": "xi-leap-iaas" },
+  SEP_1: { "title": "---------------------------------------------------------------------", "file": null },
+  PRISM_CENTRAL: { "title": "Prism Central (Current)", "file": "prism-central" },
+  PRISM_CENTRAL_REORG: { "title": "Prism Central (ReOrg)", "file": "prism-central-reorg" },
+  SEP_2: { "title": "---------------------------------------------------------------------", "file": null },
+  IASS: { "title": "IaaS", "file": "iaas" },
+  LEAP: { "title": "Leap", "file": "leap" },
+  FLOW: { "title": "Flow", "file": "flow" },
+  // XI_LEAP_FLAT: { "title": "Xi Leap (Nav Style: Flat)", "file": "xi-leap-flat" },
 }
 
 let state = E_STATE.EXPAND;

@@ -12,7 +12,7 @@
       "nav": [
         {
           "type": "PAGE", "title": "VMs",
-          "sections": ["Summary", "List#", "VM Templates", "OVAs",null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", "Templates", "OVAs", "Recycling Bin", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
         },
         {
           "type": "PAGE", "title": "Storage",
@@ -20,16 +20,41 @@
         },
         {
           "type": "PAGE", "title": "Networks",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null, "VPNs", null, "Alerts", "Events", "Metrics"]
         },
         {
           "type": "PAGE", "title": "Images",
           "sections": ["Private Images", "Public Images"]
         },
         {
-          "type": "PAGE", "title": "Catalog Items", "sections": ["List#"]
+          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
         }
       ]
+    },
+    {
+      "type": "PAGE",
+      "title": "Security",
+      "sections": ["Summary", "Security Rules#", "Security Planning", null, "Traffic Redirection"]
+    },
+    {
+      "type": "PAGE",
+      "title": "Data Protection",
+      "sections": ["Protection Policies#", "Recovery Plans", "Recoverable Entities"]
+    },
+    {
+      "type": "PARENT",
+      "title": "Other Services",
+      "nav": [
+        {
+          "type": "PAGE", "title": "CALM"
+        },
+        {
+          "type": "PAGE", "title": "Karbon"
+        }
+      ]
+    },
+    {
+      "type": "SEPARATOR"
     },
     {
       "type": "PARENT",
@@ -54,56 +79,6 @@
       ]
     },
     {
-      "type": "SEPARATOR"
-    },
-    {
-      "type": "PARENT",
-      "title": "Security",
-      "nav": [
-        {
-          "type": "PAGE", "title": "Security Policies",
-          "sections": ["Summary", "Rules#", null, "Traffic Redirection"]
-        },
-        {
-          "type": "PAGE", "title": "Security Planning",
-          "sections": ["VMs without AppType#", "AppTypes"]
-        }
-      ]
-    },
-    {
-      "type": "PARENT",
-      "title": "Data Protection",
-      "nav": [
-        {
-          "type": "PAGE", "title": "Recovery Plan", 
-          "sections": ["List#"]
-        },
-        {
-          "type": "PAGE", "title": "Recovery Rules", 
-          "sections": ["List#"]
-        },
-        {
-          "type": "PAGE", "title": "Recoverable Entities", 
-          "sections": ["List#"]
-        }
-      ]
-    },
-    {
-      "type": "PARENT",
-      "title": "Services",
-      "nav": [
-        {
-          "type": "PAGE", "title": "CALM"
-        },
-        {
-          "type": "PAGE", "title": "Karbon"
-        }
-      ]
-    },
-    {
-      "type": "SEPARATOR"
-    },
-    {
       "type": "PARENT",
       "title": "Operations",
       "nav": [
@@ -111,10 +86,10 @@
             "type": "PAGE", "title": "Activity", "sections": ["Alert#", "Events", "Audits", "Tasks"]
         },
         {
-          "type": "PAGE", "title": "Analysis", "sections": ["List#"]
+          "type": "PAGE", "title": "Analysis"
         },
         {
-          "type": "PAGE", "title": "Planning", "sections": ["List#"]
+          "type": "PAGE", "title": "Planning", "sections": ["Scenarios#", "Capacity Planning"]
         },
         {
           "type": "PAGE", "title": "Reports", "sections": ["List#"]
@@ -129,30 +104,17 @@
       "title": "Management",
       "nav": [
         {
-          "type": "PAGE", "title": "Projects", "sections": ["List#"]
-        },
-        {
           "type": "PAGE", "title": "Categories", "sections": ["List#"]
         },
         {
           "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
-        },
-        {
-          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
         }
       ]
     },
     {
-      "type": "PARENT",
+      "type": "PAGE",
       "title": "Administration",
-      "nav": [
-        {
-          "type": "PAGE", "title": "Roles", "sections": ["List#"]
-        },
-        {
-          "type": "PAGE", "title": "Users", "sections": ["List#"]
-        }
-      ]
+      "sections": ["Users#", "Roles"]
     },
     {
       "type": "SEPARATOR"
