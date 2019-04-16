@@ -8,9 +8,9 @@
   },
   {
     "type": "PAGE",
-    "title": "Virtual Machines",
+    "title": "Virtual Infrastructure",
     "sections": [
-      "List#"
+      "VMs#", "Applications", "Networks", "Containers"
     ]
   },
   {
