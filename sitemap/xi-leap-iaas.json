@@ -12,15 +12,15 @@
     "nav": [
       {
         "type": "PAGE", "title": "VMs",
-        "sections": ["Summary", "List#", "Templates", "OVAs (v1+)", "Recycling Bin (v2+)", null, "Affinity Policies(v1+)", "Anti-Affinity Policies(v1+)", "NGT Policies (v2+)", null, "Alerts", "Events", "Metrics"]
-      },
-      {
-        "type": "PAGE", "title": "Images",
-        "sections": ["Private Images", "Public Images"]
+        "sections": ["Summary", "List#", "Templates", "OVAs (v1+)", "Recycling Bin (v2+)", null, "Affinity Policies (v1+)", "Anti-Affinity Policies (v1+)", "NGT Policies (v2+)", null, "Alerts", "Events", "Metrics"]
       },
       {
         "type": "PAGE", "title": "Virtual Private Cloud",
         "sections": ["Summary", "List#", null,"VPNs", "Direct Connections", null, "Alerts", "Events", "Metrics"]
+      },
+      {
+        "type": "PAGE", "title": "Images",
+        "sections": ["Private Images", "Public Images"]
       },
       {
         "type": "PAGE", "title": "Cost Policies", "sections": ["Summary", "List#"]
