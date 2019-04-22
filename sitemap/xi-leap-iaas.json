@@ -29,7 +29,7 @@
   },
   {
     "type": "PAGE",
-    "title": "Security (v1+)",
+    "title": "Security (v2+)",
     "sections": ["Summary", "Security Rules#", "Security Planning", null, "Traffic Redirection"]
   },
   {
