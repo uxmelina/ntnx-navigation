@@ -50,6 +50,9 @@
         },
         {
           "type": "PAGE", "title": "Karbon"
+        },
+        {
+          "type": "PAGE", "title": "Buckets"
         }
       ]
     },

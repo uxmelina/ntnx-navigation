@@ -12,7 +12,7 @@
     "nav": [
       {
         "type": "PAGE", "title": "VMs",
-        "sections": ["Summary", "List#", "Templates", "OVAs (v1+)", "Recycling Bin (v2+)", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies (v2+)", null, "Alerts", "Events", "Metrics"]
+        "sections": ["Summary", "List#", "Templates", "OVAs (v1+)", "Recycling Bin (v2+)", null, "Affinity Policies(v1+)", "Anti-Affinity Policies(v1+)", "NGT Policies (v2+)", null, "Alerts", "Events", "Metrics"]
       },
       {
         "type": "PAGE", "title": "Images",
@@ -29,7 +29,7 @@
   },
   {
     "type": "PAGE",
-    "title": "Security",
+    "title": "Security (v1+)",
     "sections": ["Summary", "Security Rules#", "Security Planning", null, "Traffic Redirection"]
   },
   {
