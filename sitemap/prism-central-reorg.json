@@ -12,7 +12,7 @@
       "nav": [
         {
           "type": "PAGE", "title": "VMs",
-          "sections": ["Summary", "List#", "Templates", "OVAs", "Recycling Bin", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", "Templates", "OVAs", "Recycling Bin", null, "Affinity Policies", "Anti-Affinity Policies", "QoS Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
         },
         {
           "type": "PAGE", "title": "Storage",
@@ -24,10 +24,11 @@
         },
         {
           "type": "PAGE", "title": "Images",
-          "sections": ["Private Images", "Public Images"]
+          "sections": ["Private Images", "Public Images", null, "Image Placement Policies"]
         },
         {
-          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
+          "type": "PAGE", "title": "Policies", 
+          "sections": ["#", "", ""]
         }
       ]
     },
@@ -53,6 +54,9 @@
         },
         {
           "type": "PAGE", "title": "Buckets"
+        },
+        {
+          "type": "PAGE", "title": "Foundations"
         }
       ]
     },
@@ -98,7 +102,10 @@
           "type": "PAGE", "title": "Reports", "sections": ["List#"]
         },
         {
-          "type": "PAGE", "title": "Policies", "sections": ["Alert Policies#", "Audit Policies"]
+          "type": "PAGE", "title": "Playbooks", "sections": ["List#", "Plays", null, "Actions Gallery"]
+        },
+        {
+          "type": "PAGE", "title": "Operation Policies", "sections": ["Anomaly Exclusion#", "Efficiency Exclusion"]
         }
       ]
     },
@@ -111,13 +118,16 @@
         },
         {
           "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
         }
       ]
     },
     {
       "type": "PAGE",
       "title": "Administration",
-      "sections": ["Users#", "Roles"]
+      "sections": ["Users#", "Roles", "Projects (DEP)", null, "Life Cycle Management"]
     },
     {
       "type": "SEPARATOR"
