@@ -79,7 +79,7 @@
   {
     "type": "PAGE",
     "title": "Administration",
-    "sections": ["Projects (DEP)", "Cost Policies"]
+    "sections": ["Projects (DEP)#", "Cost Policies"]
   },
   {
     "type": "SEPARATOR"
