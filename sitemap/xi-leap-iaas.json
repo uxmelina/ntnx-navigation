@@ -21,9 +21,6 @@
       {
         "type": "PAGE", "title": "Images",
         "sections": ["Private Images", "Public Images"]
-      },
-      {
-        "type": "PAGE", "title": "Cost Policies", "sections": ["Summary", "List#"]
       }
     ]
   },
@@ -45,7 +42,7 @@
     "title": "Operations",
     "nav": [
       {
-          "type": "PAGE", "title": "Activity", "sections": ["Alert#", "Events", "Audits", "Tasks"]
+        "type": "PAGE", "title": "Activity", "sections": ["Alert#", "Events", "Audits", "Tasks"]
       },
       {
         "type": "PAGE", "title": "Analysis"
@@ -57,7 +54,10 @@
         "type": "PAGE", "title": "Reports", "sections": ["List#"]
       },
       {
-        "type": "PAGE", "title": "Policies", "sections": ["Alert Policies#", "Audit Policies"]
+        "type": "PAGE", "title": "Playbooks", "sections": ["List#", "Plays", null, "Actions Gallery"]
+      },
+      {
+        "type": "PAGE", "title": "Operation Policies", "sections": ["Anomaly Exclusion#", "Efficiency Exclusion"]
       }
     ]
   },
@@ -75,6 +75,11 @@
         "type": "PAGE", "title": "Floating IPs", "sections": ["List#"]
       }
     ]
+  },
+  {
+    "type": "PAGE",
+    "title": "Administration",
+    "sections": ["Projects (DEP)", "Cost Policies"]
   },
   {
     "type": "SEPARATOR"
