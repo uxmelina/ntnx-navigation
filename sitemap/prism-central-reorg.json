@@ -36,7 +36,7 @@
     {
       "type": "PAGE",
       "title": "Data Protection",
-      "sections": ["Protection Policies#", "Recovery Plans", "Recoverable Entities"]
+      "sections": ["Summary#", "Protection Policies", "Recovery Plans", "Recoverable Entities"]
     },
     {
       "type": "PARENT",
