@@ -31,7 +31,7 @@
     {
       "type": "PAGE",
       "title": "Security",
-      "sections": ["Summary", "Security Rules#", "Security Planning", null, "Traffic Redirection"]
+      "sections": ["Summary", "Security Rules#", "Security Planning", null, "Traffic Redirection", "Port Groups"]
     },
     {
       "type": "PAGE",
