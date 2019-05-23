@@ -20,7 +20,7 @@ const E_PRODUCT = {
 let state = E_STATE.EXPAND;
 
 $(function () {
-  product = E_PRODUCT.XI_LEAP;
+  product = E_PRODUCT.PRISM_CENTRAL_REORG;
   setProduct(product);
 
   $('.switcher').click(function () {
