@@ -14,6 +14,7 @@ const E_PRODUCT = {
   IASS: { "title": "IaaS", "file": "iaas" },
   LEAP: { "title": "Leap", "file": "leap" },
   FLOW: { "title": "Flow", "file": "flow" },
+  SUPPORT_PORTAL: { "title": "Support Portal", "file": "support-portal" },
   // XI_LEAP_FLAT: { "title": "Xi Leap (Nav Style: Flat)", "file": "xi-leap-flat" },
 }
 
