@@ -12,27 +12,25 @@
     },
     {
       "type": "PARENT",
-      "title": "Virtual Infrastructure",
+      "title": "Smart Support",
       "nav": [
         {
-          "type": "PAGE", "title": "VMs",
+          "type": "PAGE", "title": "Summary",
           "sections": ["Summary", "List#", "Templates", "OVAs",null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Storage",
+          "type": "PAGE", "title": "Cases",
           "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Networks",
+          "type": "PAGE", "title": "Teams",
           "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Images",
+          "type": "PAGE", "title": "Logs",
           "sections": ["Private Images", "Public Images"]
-        },
-        {
-          "type": "PAGE", "title": "Cost Policies", "sections": ["List#"]
         }
+    
       ]
     },
     {
