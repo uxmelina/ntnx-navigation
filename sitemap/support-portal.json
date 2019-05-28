@@ -15,20 +15,15 @@
       "title": "Smart Support",
       "nav": [
         {
-          "type": "PAGE", "title": "Summary",
-          "sections": ["Summary", "List#", "Templates", "OVAs", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+          "type": "PAGE", "title": "Summary"
         },
         {
           "type": "PAGE", "title": "Cases",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
-        },
-        {
-          "type": "PAGE", "title": "Teams",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["List#"]
         },
         {
           "type": "PAGE", "title": "Logs",
-          "sections": ["Private Images", "Public Images"]
+          "sections": ["List#"]
         }
     
       ]
@@ -38,7 +33,7 @@
       "title": "Insights/Alerts",
       "nav": [
         {
-            "type": "PAGE", "title": "Summary", "sections": ["Alert#", "Events", "Audits", "Tasks"]
+            "type": "PAGE", "title": "Summary"
         },
         {
           "type": "PAGE", "title": "List"
@@ -52,39 +47,39 @@
       "nav": [
         {
           "type": "PAGE", "title": "Nodes",
-          "sections": ["Summary", "List#", "Templates", "OVAs", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null, "Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Blocks",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Clusters",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Prism",
-          "sections": ["Private Images", "Public Images"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "PCs",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Licenses",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Coin Licenses",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Sites",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         },
         {
           "type": "PAGE", "title": "Features",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
         }
     
       ]
@@ -94,10 +89,52 @@
       "title": "Downloads",
       "nav": [
         {
-          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+          "type": "PAGE", "title": "AOS (NOS)"
         },
         {
-          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+          "type": "PAGE", "title": "Nutanix Files"
+        },
+        {
+          "type": "PAGE", "title": "IBM PowerPC"
+        },
+        {
+          "type": "PAGE", "title": "Hypervisor Details"
+        },
+        {
+          "type": "PAGE", "title": "Prism Central"
+        },
+        {
+          "type": "PAGE", "title": "Nutanix Move"
+        },
+        {
+          "type": "PAGE", "title": "X-Ray"
+        },
+        {
+          "type": "PAGE", "title": "Tools and Firmware"
+        },
+        {
+          "type": "PAGE", "title": "Phoenix"
+        },
+        {
+          "type": "PAGE", "title": "Foundation"
+        },
+        {
+          "type": "PAGE", "title": "STIG"
+        },
+        {
+          "type": "PAGE", "title": "FVP and Architect"
+        },
+        {
+          "type": "PAGE", "title": "FleX SDK"
+        },
+        {
+          "type": "PAGE", "title": "Witness VM"
+        },
+        {
+          "type": "PAGE", "title": "Era"
+        },
+        {
+          "type": "PAGE", "title": "Xi-Frame"
         }
       ]
     },
@@ -106,10 +143,53 @@
       "title": "Documentation",
       "nav": [
         {
-          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+          "type": "PAGE", "title": "Software Documentation"
         },
         {
-          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+          "type": "PAGE", "title": "Hardware Replacement Documentation"
+        },
+        {
+          "type": "PAGE", "title": "Software Documentation"
+        },
+        {
+          "type": "PAGE", "title": "Knowelege Base"
+        },
+        {
+          "type": "PAGE", "title": "Solutions Documentation"
+        },
+        {
+          "type": "PAGE", "title": "EOL Information"
+        },
+        {
+          "type": "PAGE", "title": "Field Advisories"
+        },
+        {
+          "type": "PAGE", "title": "Security Advisories"
+        },
+        {
+          "type": "PAGE", "title": "Product Notices"
+        },
+        {
+          "type": "PAGE", "title": "Upgrade Paths"
+        },
+        {
+          "type": "PAGE", "title": "Comptibility Matrix",
+          "sections": ["Hardware#", "Nutanix Ready Solutions", "AHV Guest OS"]
+        },
+        {
+          "type": "PAGE", "title": "Software Produt Interoperability"
+        },
+        {
+          "type": "PAGE", "title": "Webinar Recordings"
+        },
+        {
+          "type": "PAGE", "title": ".Next Forums"
+        },
+        {
+          "type": "PAGE", "title": "EOL Policy Archive"
+        },
+        {
+          "type": "PAGE", "title": "Terms and Conditions"
         }
       ]
     },
@@ -118,10 +198,10 @@
       "title": "Security",
       "nav": [
         {
-          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+          "type": "PAGE", "title": "Security Contact and Procedures", "sections": ["List#"]
         },
         {
-          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+          "type": "PAGE", "title": "Product Signing (GPG) Keys", "sections": ["List#"]
         }
       ]
     },
@@ -130,10 +210,7 @@
       "title": "Announcements",
       "nav": [
         {
-          "type": "PAGE", "title": "Categories", "sections": ["List#"]
-        },
-        {
-          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+          "type": "PAGE", "title": "Announcements", "sections": ["List#"]
         }
       ]
     },
