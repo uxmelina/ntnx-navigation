@@ -35,28 +35,99 @@
     },
     {
       "type": "PARENT",
-      "title": "Operations",
+      "title": "Insights/Alerts",
       "nav": [
         {
-            "type": "PAGE", "title": "Activity", "sections": ["Alert#", "Events", "Audits", "Tasks"]
+            "type": "PAGE", "title": "Summary", "sections": ["Alert#", "Events", "Audits", "Tasks"]
         },
         {
-          "type": "PAGE", "title": "Analysis"
+          "type": "PAGE", "title": "List"
+        }
+      ]
+    },
+
+    {
+      "type": "PARENT",
+      "title": "Install Base/Assets/Inventory",
+      "nav": [
+        {
+          "type": "PAGE", "title": "Nodes",
+          "sections": ["Summary", "List#", "Templates", "OVAs", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Planning", "sections": ["Scenarios#", "Capacity Planning"]
+          "type": "PAGE", "title": "Blocks",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Reports", "sections": ["List#"]
+          "type": "PAGE", "title": "Clusters",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
         },
         {
-          "type": "PAGE", "title": "Policies", "sections": ["Alert Policies#", "Audit Policies"]
+          "type": "PAGE", "title": "Prism",
+          "sections": ["Private Images", "Public Images"]
+        },
+        {
+          "type": "PAGE", "title": "PCs",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Licenses",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Coin Licenses",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Sites",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        },
+        {
+          "type": "PAGE", "title": "Features",
+          "sections": ["Summary", "List#", null,"Alerts", "Events", "Metrics"]
+        }
+    
+      ]
+    },
+    {
+      "type": "PARENT",
+      "title": "Downloads",
+      "nav": [
+        {
+          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
         }
       ]
     },
     {
       "type": "PARENT",
-      "title": "Management",
+      "title": "Documentation",
+      "nav": [
+        {
+          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+        }
+      ]
+    },
+    {
+      "type": "PARENT",
+      "title": "Security",
+      "nav": [
+        {
+          "type": "PAGE", "title": "Categories", "sections": ["List#"]
+        },
+        {
+          "type": "PAGE", "title": "Availability Zones", "sections": ["List#"]
+        }
+      ]
+    },
+    {
+      "type": "PARENT",
+      "title": "Announcements",
       "nav": [
         {
           "type": "PAGE", "title": "Categories", "sections": ["List#"]
