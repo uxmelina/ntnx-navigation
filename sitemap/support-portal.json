@@ -16,7 +16,7 @@
       "nav": [
         {
           "type": "PAGE", "title": "Summary",
-          "sections": ["Summary", "List#", "Templates", "OVAs",null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
+          "sections": ["Summary", "List#", "Templates", "OVAs", null, "Affinity Policies", "Anti-Affinity Policies", "NGT Policies", null, "Alerts", "Events", "Metrics"]
         },
         {
           "type": "PAGE", "title": "Cases",
