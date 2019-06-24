@@ -67,11 +67,11 @@
         },
         {
           "type": "PAGE", "title": "Licenses",
-          "sections": ["Summary", "Purchases#", null,"Cluster Usage", "Discoveries", "Cases"]
+          "sections": ["Summary", "Purchases#","Cluster Usage", null, "Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Coin Licenses",
-          "sections": ["Summary", "Purchases#", null,"Cluster Usage", "Discoveries", "Cases"]
+          "sections": ["Summary", "Purchases#","Cluster Usage", null, "Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Subscriptions",
