@@ -36,7 +36,7 @@
             "type": "PAGE", "title": "Summary"
         },
         {
-          "type": "PAGE", "title": "List"
+          "type": "PAGE", "title": "Discoveries"
         }
       ]
     },
@@ -47,39 +47,35 @@
       "nav": [
         {
           "type": "PAGE", "title": "Nodes",
-          "sections": ["Summary", "List#", null, "Alerts", "Events", "Insights"]
+          "sections": ["Summary", "List#", null, "Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Blocks",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "sections": ["Summary", "List#", null,"Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Clusters",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "sections": ["Summary", "List#", null,"Discoveries", "Cases", "Diagnostics"]
         },
         {
-          "type": "PAGE", "title": "Prism",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "type": "PAGE", "title": "Products",
+          "sections": ["Summary", "List#", null,"Discoveries", "Cases"]
         },
         {
-          "type": "PAGE", "title": "PCs",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "type": "PAGE", "title": "Software Versions",
+          "sections": ["Summary", "List#", null,"Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Licenses",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "sections": ["Summary", "Purchases#", null,"Cluster Usage", "Discoveries", "Cases"]
         },
         {
           "type": "PAGE", "title": "Coin Licenses",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "sections": ["Summary", "Purchases#", null,"Cluster Usage", "Discoveries", "Cases"]
         },
         {
-          "type": "PAGE", "title": "Sites",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
-        },
-        {
-          "type": "PAGE", "title": "Features",
-          "sections": ["Summary", "List#", null,"Alerts", "Events", "Insights"]
+          "type": "PAGE", "title": "Subscriptions",
+          "sections": ["Summary", "Purchases#", null, "Discoveries", "Cases"]
         }
     
       ]
