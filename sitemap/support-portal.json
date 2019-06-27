@@ -43,7 +43,7 @@
 
     {
       "type": "PARENT",
-      "title": "Install Base/Assets/Inventory",
+      "title": "Assets",
       "nav": [
         {
           "type": "PAGE", "title": "Nodes",
@@ -58,14 +58,19 @@
           "sections": ["Summary", "List#", null,"Discoveries", "Cases", "Diagnostics"]
         },
         {
-          "type": "PAGE", "title": "Products",
-          "sections": ["Summary", "List#", null,"Discoveries", "Cases"]
-        },
-        {
           "type": "PAGE", "title": "Software Versions",
           "sections": ["Summary", "List#", null,"Discoveries", "Cases"]
-        },
-        {
+        }
+    
+      ]
+    },
+    
+    
+    {
+      "type": "PARENT",
+      "title": "Licenses",
+      "nav": [
+                {
           "type": "PAGE", "title": "Licenses",
           "sections": ["Summary", "Purchases#","Cluster Usage", null, "Discoveries", "Cases"]
         },
@@ -77,9 +82,9 @@
           "type": "PAGE", "title": "Subscriptions",
           "sections": ["Summary", "Purchases#", null, "Discoveries", "Cases"]
         }
-    
       ]
     },
+    
     {
       "type": "PARENT",
       "title": "Downloads",
@@ -134,6 +139,12 @@
         }
       ]
     },
+    
+    
+    
+    
+    
+    
     {
       "type": "PARENT",
       "title": "Documentation",
