@@ -37,6 +37,7 @@
         },
         {
           "type": "PAGE", "title": "Discoveries"
+          "sections": ["List#"]
         }
       ]
     },
