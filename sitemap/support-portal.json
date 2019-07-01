@@ -36,7 +36,7 @@
             "type": "PAGE", "title": "Summary"
         },
         {
-          "type": "PAGE", "title": "Discoveries"
+          "type": "PAGE", "title": "Discoveries",
           "sections": ["List#"]
         }
       ]
